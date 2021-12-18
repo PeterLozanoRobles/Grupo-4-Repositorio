@@ -1,0 +1,77 @@
+footer h2{
+    color: pink;
+}
+
+.contenedor_menu{
+background: #F078E8;  
+padding: 20px;
+}
+
+.contenedor_pl{
+    display: flex;
+
+}
+
+.menu_PL{
+    list-style: none;
+    padding: 0;
+    background: #F078E8;
+    width:90%;
+    max-width: 900px;
+    max-height: 140px;
+    margin: auto;
+    font-size: 20px; 
+    border-radius: 5%;
+}
+
+.menu_PL li a{
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+    display: block;
+}
+
+.menu_PL li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu_PL li a:hover{
+    background: #8F8C8F;
+}
+
+.letraMenu{
+    background: pink;   
+    text-align: center;
+}
+
+.contenedor2_MF{
+    background: black;
+    width: 100%;
+    font-size: 20px; 
+    line-height:0;
+    padding: 20px 20px 20px 20px;
+    
+}
+
+.logo1{
+    width: 200px; 
+    height: 175px;
+    float: left;
+}
+
+.logo2{
+    width: 175px; 
+    height: 75px;
+    float: right;
+}
+
+.icono{
+    width: 40px; 
+    height: 40px
+}
+
+.letrafoo{
+    color: pink;    
+}
+
