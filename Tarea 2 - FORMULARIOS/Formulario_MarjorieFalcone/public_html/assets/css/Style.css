@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : dic 22, 2021, 10:40:44 p.m.
+    Author     : falcone
+*/
+.marco{
+    margin-left: 300px;
+    width: 50%;             
+    border: 25px solid; 
+    border-bottom-color: lightblue;
+    border-top-color: lightblue;
+    border-right-color: pink;
+    border-left-color: pink;
+}
+
+.bordeSty{
+    border: pink;
+    background-color: pink;
+}
+
+.logo2{
+    width: 175px; 
+    height: 75px;
+    float: left;
+    background-color: pink;
+}
