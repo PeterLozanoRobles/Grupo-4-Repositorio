@@ -1,7 +1,6 @@
 
 .contenedor_menu{
-background: pink;  
-padding: 20px;
+padding-bottom: 50px;
 font-style: italic;
 }
 
@@ -10,35 +9,6 @@ font-style: italic;
     text-align: center;
 }
 
-.menu_PL{
-    list-style: none;
-    padding: 0;
-    background: pink;
-    width:90%;
-    max-width: 900px;
-    max-height: 140px;
-    margin: auto;
-    font-size: 20px; 
-    border-radius: 5%;
-}
-
-.menu_PL li a{
-    text-decoration: none;
-    color: black;
-    border-color: white;
-    padding: 25px;
-    display: block;
-    border-style: dashed;
-}
-
-.menu_PL li{
-    display: inline-block;
-    text-align: center;
-}
-
-.menu_PL li a:hover{
-    background: lightblue;
-}
 
 .letraMenu{
     background: pink;   
@@ -112,5 +82,62 @@ footer{
     text-align: center;
     border-color: pink;
     border-style: dashed;
-    
 }
+
+.menu_PL{
+    list-style: none;
+    padding: 0;
+    background: pink;
+    width:90%;
+    max-width: 900px;
+    max-height: 140px;
+    margin: auto; 
+    font-size: 16px;
+}
+
+header{
+    margin:auto;
+    width: 1200px;
+    font-family: helvetica;
+    background: pink;
+    padding: 40px;
+}
+
+ul{
+    list-style: none;
+}
+
+.menu_PL li a{
+    background: pink;
+    color: white;
+    text-decoration: none;
+    padding: 20px 25px;
+    display: block;
+}
+
+.menu_PL li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu_PL > li{
+    float:left;
+}
+
+.menu_PL li a:hover{
+    background: lightblue;
+    border-style: dashed; border-color: white;
+}
+
+.menu_PL li ul{
+    display: none;
+    position: absolute;
+    min-width: 300px;
+}
+
+.menu_PL li:hover > ul{
+    display: block
+}
+
+
+
