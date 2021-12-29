@@ -37,6 +37,45 @@
         width: 1310px;
         font-style: italic;
     }
+
+.contenedor_menu{
+    padding-bottom: 60px;
+    font-style: italic;
+    }
+    
+    .contenedor_pl{
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    .letraMenu{
+        background: pink;   
+        text-align: center;
+    }
+    
+    .contenedor2_MF{
+        background: black;
+        width: 1295px;
+        font-size: 20px; 
+        line-height:0;
+        padding: 20px 20px 20px 20px;
+        
+    }
+    
+    .icono{
+        width: 40px; 
+        height: 40px
+    }
+    
+    .letrafoo{
+        color: pink;    
+    }
+    
+    footer{
+        width: 1310px;
+        font-style: italic;
+    }
     
     .contenedor_secundario1_pl{
       text-align: center;
@@ -173,7 +212,6 @@
     font-size: 20px; 
     line-height:0;
     padding: 20px 20px 20px 20px;
-    
 }
 
 
@@ -189,24 +227,17 @@ h1
 
 body {
     
-    background: lightcyan;
+    background: ;
     border-color: black;
     padding: 30px;
     margin: auto;
 
   }
 
-  .CN_LADY{
-    width: 500px;
-    background: lightcyan;
-    border-color: black;
-   padding: 40px;
-   margin: auto;
-   margin-top: 20px;
-   border-radius: 4px;
-   font-family: 'calibri';
-   text-align: center;
-  }
+  footer{
+    width: 1310px;
+    font-style: italic;
+}
 
   /*******************************************************************/
   
