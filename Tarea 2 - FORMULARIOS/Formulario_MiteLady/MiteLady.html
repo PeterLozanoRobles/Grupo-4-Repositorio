@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nosotros</title>
+        <link rel="stylesheet" href="assets/css/Style_LM.css">
+    </head>
+
+    <body>
+<h1>Trabaja con Nosotros</h1>
+
+<form>
+   <fieldset>
+    <legend><b>Datos Personales</b></legend><br>
+        <p>Nombres:
+            <input type="text" name="nombre" size="40" placeholder="Escriba sus dos nombres"><br><br>
+        </p>     
+        <p>Apellidos:
+            <input type="text" name="apellidos" size="40" placeholder="Escriba sus dos apellidos"><br><br>
+        </p>
+        <p>Correo electrònico: 
+            <input type="text" name="correo" required><br><br>
+        </p>
+        <p>teléfono: 
+            <input type="tel" name="telefono" required><br><br>
+        </p>
+        <p>Fecha de nacimiento:
+            <input class="contenedor"  type="date" name="fecha"><br>
+        </p>
+        <p>Sexo:
+         <input type="radio" name="hombre" value="h" required> Hombre 
+            <input type="radio" name="hm" value="m" required> Mujer
+        </p>
+         <p>Formación académica:
+            <select name="menu">
+            <option value="1">Bachiller</option>
+            <option value="2">Tecnólogo</option>
+            <option value="3">Universitario</option>
+            </select>
+         </p><br>
+
+         <input type="file" name="archivosubido"><br><br>
+         <p>
+            Comentario:<br>
+            <textarea name="comentario"></textarea>
+            <input type="submit" value="Enviar datos">
+
+         </fieldset>
+          </form>
+
+    </body> 
+</html>

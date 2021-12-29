@@ -1,0 +1,19 @@
+h1 
+{
+    display:inline-block;
+    text-align: center; 
+    width: 75%;
+    -webkit-text-fill-color:black;    
+    -webkit-text-stroke:2px;    
+    color: black
+}
+
+body {
+    width:500px;
+    text-align: center;
+    background: lightcyan;
+    border-color: black;
+    padding: 30px;
+    margin: auto;
+
+  }
