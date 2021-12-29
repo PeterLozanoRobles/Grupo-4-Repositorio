@@ -1,0 +1,159 @@
+
+.contenedor_menu{
+padding-bottom: 50px;
+font-style: italic;
+}
+
+.contenedor_pl{
+    width: 100%;
+    text-align: center;
+}
+
+
+.letraMenu{
+    background: pink;   
+    text-align: center;
+}
+
+.contenedor2_MF{
+    background: black;
+    width: 1295px;
+    font-size: 20px; 
+    line-height:0;
+    padding: 20px 20px 20px 20px;
+    
+}
+
+.icono{
+    width: 40px; 
+    height: 40px
+}
+
+.letrafoo{
+    color: pink;    
+}
+
+footer{
+    width: 1310px;
+    font-style: italic;
+}
+
+.contenedor_secundario1_pl{
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 25px;
+}
+
+.imagen_cuadro_pl img{
+    padding-top: 20px;
+    width: 250px;
+    height: 300px;
+    padding-bottom: 10px;
+}
+
+.texto_precio_pl{
+    text-align: center;
+    border-color: pink;
+    border-style: dashed;
+}
+
+.menu_PL{
+    list-style: none;
+    padding: 0;
+    background: lightblue;
+    width:90%;
+    max-width: 900px;
+    max-height: 140px;
+    margin: auto; 
+    font-size: 16px;
+}
+
+header{
+    margin:auto;
+    width: 1200px;
+    font-family: helvetica;
+    background: lightblue;
+    padding: 40px;
+}
+
+ul{
+    list-style: none;
+}
+
+.menu_PL li a{
+    background: lightblue;
+    color: white;
+    text-decoration: none;
+    padding: 20px 25px;
+    display: block;
+}
+
+.menu_PL li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu_PL > li{
+    float:left;
+}
+
+.menu_PL li a:hover{
+    background: pink;
+    border-style: dashed; border-color: white;
+}
+
+.menu_PL li ul{
+    display: none;
+    position: absolute;
+    min-width: 300px;
+}
+
+.menu_PL li:hover > ul{
+    display: block
+}
+
+.Nosotros_LM{
+   border: 15px solid;
+   border-color: lightblue;
+   font-size: 20px;
+   text-align: center;
+   font-style: italic;
+   background: white;
+   margin-top: 20px;
+   padding-bottom: 100px;
+}
+
+.misionVision_LM{
+    float: left;
+}
+
+
+.misionVision_LM img{
+    padding-top: 180px;
+}
+
+.texto_misionVision_LM p{
+   background: white;
+   font-size: 20px;
+   color: black;
+   text-align: center;
+   padding-right: 30px;
+}
+
+.texto_misionVision_LM #h13_LM{
+    color: black; 
+    background: pink; 
+    margin:40px;
+    padding:0;
+}
+
+.texto_misionVision_LM #h12_LM{
+    color: pink; 
+    background: pink; 
+    margin:40px;
+    padding:0;
+}
+
+.copry{
+    color: whitesmoke;
+}
