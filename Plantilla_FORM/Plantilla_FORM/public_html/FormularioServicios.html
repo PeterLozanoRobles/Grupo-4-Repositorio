@@ -2,6 +2,7 @@
 <html lang="es">
     <head>
         <title>Tienda de flores</title>
+        <link rel="stylesheet" href="css/StyleAndyFrm.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
@@ -57,29 +58,29 @@
             strong{
                 color: pink;
                 margin-left: 250px;
-                size: 20px;
+                font-size: 20px;
             }
         </style>
-        <link rel="stylesheet" href="assets_GC/css/style.GC.css"/>    
+        <link rel="stylesheet" href="css/Style.css"/>     
     </head>
     
     <body>   
         <header>
             <div class="contenedor_menu">
-                <img class="logo1_new" src="assets_GC/image/Logo.png" alt="logo">
-                <img class="logo2" src="assets_GC/image/Logo.png" alt="logo">
+                <img class="logo1_new" src="image/Logo.png" alt="logo">
+                <img class="logo2" src="image/Logo.png" alt="logo">
                 <div class="contenedor_pl">
                 <ul class="menu_PL">
                     <li><a href="FalconeMarjuri.html"><b>Inicio</b></a></li>
                     <li><a href="MiteLady.html"><b>Nosotros</b></a></li>
-                    <li><a href="HolguinAndy.html"><b>Servicios</b></a></li>
+                    <li><a href="FormularioServicios.html"><b>Servicios</b></a></li>
                     <li><a href="GomezCatalina.html"><b>Sucursales</b></a></li>
                     <li><a href="LozanoPeter.html"><b>Eventos</b></a></li>
                     <li><a href=""><b>Formularios</b></a>
                         <ul>
                             <li><a href=""><b>Inicio</b></a></li>
-                            <li><a href=""><b>Nosotros</b></a></li>
-                            <li><a href=""><b>Servicios</b></a></li>
+                            <li><a href="MiteLady.html"><b>Nosotros</b></a></li>
+                            <li><a href="FormularioServicios.html"><b>Servicios</b></a></li>
                             <li><a href=""><b>Sucursales</b></a></li>
                             <li><a href=""><b>Eventos</b></a></li>
                         </ul>
@@ -89,54 +90,61 @@
             </div>
             <br>            
         </header>
-     
-
         
-        
-        <section class="registro-sucursales">
-            
-            <h4> ✽ Reservar cita Sucursal ฅ^-ﻌ-^ฅ </h4>
-            
-            <b>Nombre</b><br>
-            <input class="contenedor" type="text" name="nombre"  placeholder="Ingrese su nombre"><br>
-            <b>Apellido</b><br>
-            <input class="contenedor" type="text" name="apellido" placeholder="Ingrese su apellido"><br>
-            <b>Telefono</b><br>
-            <input class="contenedor" type="tel" name="telefono" placeholder="Ingrese su numero telefono"><br>
-            <h5>Seleccione la Sucursal</h5><br>
-            <input class="contenedorO"  type="radio" name="opcion" value="1"> Floreria KYS<br>
-            <input class="contenedorO"  type="radio" name="opcion" value="2"> Floreria Guayaquil<br>
-            <input class="contenedorO"  type="radio" name="opcion" value="3"> Tía Paraíso Flor<br><br>
-            
-            <b>Fecha</b>
-            <input class="contenedor"  type="date" name="fecha"><br>
-            <p style="color: red">Recuerde:</p><p>Solo atendemos de Lunes a Viernes...</p><br>
-            
-            <b>Hora</b><br>
-            <select class="contenedor"   name="menu">
-                <option value="0">Elija una opcion :3 </option>
-                <option value="1">7:30 a.m</option>
-                <option value="2">8:30 a.m</option>
-                <option value="2">9:30 a.m</option>
-                <option value="2">10:30 a.m </option>
-            </select>
-            <input class="boton" type="submit" value="Reservar" size="25"><br>
-        
-       </section>
-        
+        <section class="registro">
+            <h4>Formulario Registro</h4>
+            <input class="control" type="text" name="Nombre" id="nombre" placeholder="Ingrese sus nombres y apellidos">
+            <input class="control" type="text" name="Telefono" id="telefono" placeholder="Ingrese su teléfono">
+            <input class="control" type="email" name="Correo" id="correo" placeholder="Ingrese su correo">
     
-    ´<footer> 
+    
+    
+            <Label><br>Tpo de arreglo:</Label>
+            <select id="tipo" >
+                <option>Circular</option>
+                <option>Trinagular</option>
+                <option>Vertical</option>
+            </select>
+    
+            <Label> <br><br> Escoja su ciudad:</Label>
+            <input list="ciudades" >
+            <datalist id="ciudades">
+                <option value="Guayaquil">
+                <option value="Quito">
+                <option value="Ambato">
+            </datalist>
+    
+            <div class="pago">
+                <label><br> Forma de pago:<br><br> </label>
+                <input type="radio" id="contactChoice1" name="contact" value="email">
+                <label for="contactChoice1">Tarjeta de credito</label>
+    
+                <input type="radio" id="contactChoice2" name="contact" value="phone">
+                <label for="contactChoice2">Transferencia bancaria</label>
+            </div>
+    
+            <label ><br> Mensaje <br></label>
+            <textarea  name="mensaje" id="mensaje" cols="40" rows="15"></textarea>
+    
+            <p>Estoy de acuerdo con <a href="#">Terminos y condiciones </a></p>
+            <input  style="background: pink;" class="boton" type="submit" value="Aceptar">
+    
+    
+    
+        </section>         
+        
+     <footer> 
         <div class="contenedor2_MF">
-            <u class="letrafoo"> Horario de atencion </u>            
+            <u class="letrafoo"> Horario de atencion </u>             
             <h5>Lunes a Viernes 09:00 a 18:00</h5>
-            <h5>Sábado 09:00 a 14:00</h5><br>
+            <h5>Sábado 09:00 a 14:00</h5>
             <u class="letrafoo"> Redes Sociales</u>
             <p> </p>
-            <a href="#"> <img  class="icono" src="assets_GC/image/facebook.png" alt="carrito_compra"> </a>            
-            <a href="#"> <img  class="icono" src="assets_GC/image/what.png" alt="carrito_compra"> </a>
-            <a href="#"> <img  class="icono" src="assets_GC/image/Instagram.png" alt="carrito_compra"> </a>
-            <p>Copyright &copy; 2021 Gómez Romero, todos los derechos reservados.</p>
+            <a href="#"> <img  class="icono" src="image/facebook.png" alt="carrito_compra"> </a>
+            <a href="#"> <img  class="icono" src="image/what.png" alt="carrito_compra"> </a>
+            <a href="#"> <img  class="icono" src="image/Instagram.png" alt="carrito_compra"> </a>
+            <p>Copyright &copy; 2021 Marjorie Falcone, todos los derechos reservados.</p>
         </div>           
-     </footer> 
+     </footer>              
     </body>
 </html>

@@ -1,0 +1,40 @@
+.contenedor2_MF{
+    background: black;
+    width: 1295px;
+    font-size: 20px; 
+    line-height:0;
+    padding: 20px 20px 20px 20px;
+    
+}
+
+
+h1 
+{
+    display:inline-block;
+    text-align: center; 
+    width: 75%;
+    -webkit-text-fill-color:black;    
+    -webkit-text-stroke:2px;    
+    color: black;
+}
+
+body {
+    
+    background: lightcyan;
+    border-color: black;
+    padding: 30px;
+    margin: auto;
+
+  }
+
+  .CN_LADY{
+    width: 500px;
+    background: lightcyan;
+    border-color: black;
+   padding: 40px;
+   margin: auto;
+   margin-top: 20px;
+   border-radius: 4px;
+   font-family: 'calibri';
+   text-align: center;
+  }

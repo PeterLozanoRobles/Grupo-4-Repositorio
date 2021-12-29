@@ -1,5 +1,6 @@
+
 .contenedor_menu{
-padding-bottom: 60px;
+padding-bottom: 50px;
 font-style: italic;
 }
 
@@ -13,70 +14,13 @@ font-style: italic;
     background: pink;   
     text-align: center;
 }
- .registro-sucursales{
-     width:550px;
-     background:lightblue;
-     padding: 30px;
-     margin: auto;
-     margin-top: 100px;
-     border-radius: 10px;
-     font-family: calibri;
-    
-}
-.registro-sucursales h4{
-    font-size: 25px;
-    margin-bottom: 30px;
-    text-align: center;
-    
-}
-.registro-sucursales h5{
-    font-size: 20px;
-    text-align: left;
-    color:blue;
-    
-}
-.contenedor{
-    width: 96%;
-    background: #f8d8dd;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border:2px solid violet;
-    font-family: calibri;
-    font-size: 18px;
-    
-}
-.contenedorO{
-  text-align: center;
-}
-.registro-sucursales .boton {
-    
-    background: lightpink;
-    color:black;
-    font-size: 16px;
-    width:100px; 
-    margin: 15px -40px; 
-    position:relative;
-    left:47%;
-    text-decoration: none;
-    padding: 10px;
-    font-weight: 600;
-    border-radius: 6px;
-    border: 2px solid black;
-    
-    
-}
-.registro-sucursales .boton:hover{
-    background: lightblue;
-    
-}
+
 .contenedor2_MF{
     background: black;
     width: 1295px;
     font-size: 20px; 
     line-height:0;
     padding: 20px 20px 20px 20px;
-    color:white;
     
 }
 
@@ -194,3 +138,35 @@ ul{
 .menu_PL li:hover > ul{
     display: block
 }
+
+.contenedor_form{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form_reservacion{
+    width: 400px;
+    background: lightblue;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color:black;
+}
+
+.form_reservacion h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.casillas{
+    width: 100%;
+    background: pink;
+    padding: 10px;
+}
+
+.botones{
+    
+}
+
