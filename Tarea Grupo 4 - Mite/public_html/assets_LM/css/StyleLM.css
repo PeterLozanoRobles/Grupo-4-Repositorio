@@ -70,16 +70,18 @@ footer{
 .Nosotros_LM{
    border: 15px solid;
    border-color: lightblue;
-   display: inline-block;
    font-size: 20px;
    text-align: center;
    font-style: italic;
    background: white;
 }
 
+
+
 .misionVision_LM{
     float: left;
 }
+
 
 .misionVision_LM img{
     padding-top: 180px;

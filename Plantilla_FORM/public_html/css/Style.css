@@ -101,6 +101,7 @@ header{
     font-family: helvetica;
     background: lightblue;
     padding: 40px;
+    margin-bottom: 40px;
 }
 
 ul{
@@ -139,34 +140,16 @@ ul{
     display: block
 }
 
-.contenedor_form{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-.form_reservacion{
-    width: 400px;
-    background: lightblue;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
-    color:black;
-}
-
-.form_reservacion h2{
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.casillas{
-    width: 100%;
-    background: pink;
-    padding: 10px;
-}
-
-.botones{
+.centro{
+    background-color:lavenderblush;
+    text-align: center;
+    font-size: 25px;
+    box-sizing: content-box;
+    }
+.tema{
+    background-color:mistyrose;
+     text-align: center;
+     font-family: Calisto MT;
     
 }
-
