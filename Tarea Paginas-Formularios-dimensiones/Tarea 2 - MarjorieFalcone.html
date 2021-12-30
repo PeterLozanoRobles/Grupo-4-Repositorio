@@ -9,13 +9,6 @@
                 background: lightblue;
                 width: 1335px;
             }
-            
-            .logo1{
-                width: 200px; 
-                height: 175px;
-                float: left;
-            }
-            
             .logo1_new{
                 width: 175px; 
                 height: 75px;
@@ -26,7 +19,6 @@
                 width: 175px; 
                 height: 75px;
                 float: right;
-
             }
             
             footer h2{
@@ -38,14 +30,9 @@
                 color: white;
             }
             
-            #Portada_MF{
-                width: 1100px;
-                height: 500px;
-                border: 15px solid; 
-                border-bottom-color: lightblue;
-                border-top-color: lightblue;
-                border-right-color: pink;
-                border-left-color: pink;
+            .Portada{
+                width: 80%; 
+                height: 300px;                                
             }
             .integrante{
                 margin-left: 300px;
@@ -61,6 +48,30 @@
                 margin-left: 250px;
                 size: 20px;
             }
+            @media (max-width: 500px) { 
+                .contenedor2_MF{
+                background-color: black;
+                width: 400px;                 
+                }
+                .Portada{
+                width: 30%; 
+                height: 75px;                                
+                }
+                .contenedor_principal_pl .contenedor_secundario_pl{
+                background: lightblue;
+                width: 400px;  
+                }
+                .logo1_new{
+                width: 0px; 
+                height: 0px;              
+                }
+
+                .logo2{
+                    width: 0px; 
+                    height: 0px;                    
+                }
+            }
+            
         </style>
         <link rel="stylesheet" href="assets_MF/css/Style.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"/>
@@ -100,7 +111,7 @@
              justify-content: center;">
                 
 		<div class="elemento col-md-3" style="background:pink; padding:10px; margin: 5px; border: 1px solid lightblue">
-		    <img src="assets_MF/image/logo.png" alt="imagen_LM" width="200" height="100">
+		    <img src="assets_MF/image/logo.png" alt="imagen_LM">
 		</div >
 				
 		<div class="elemento col-md-5" style="padding:10px; margin: 5px; border: 1px solid pink">
@@ -117,7 +128,7 @@
             <div class="row" style="display: flex; align-items: center;
              justify-content: center;">		
 	    <div class="elemento col-md-11" style="border: 1px solid pink; margin: 5px;">	
-                <img src="assets_MF/image/Portada.png" alt="imagen_LM" width="1200" height="400">
+                <img class="Portada" src="assets_MF/image/Portada.png" alt="imagen_LM">
 	    </div>	
                 	
                 

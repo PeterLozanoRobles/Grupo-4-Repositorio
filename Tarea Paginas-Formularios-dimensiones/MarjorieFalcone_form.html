@@ -81,6 +81,25 @@
             .botonUbic{
                 margin-left: 800px;
             }
+            @media (max-width: 500px) { 
+                .contenedor2_MF{
+                background-color: black;
+                width: 400px;               
+                }               
+                .contenedor_principal_pl .contenedor_secundario_pl{
+                background: lightblue;
+                width: 400px;  
+                }
+                .logo1_new{
+                width: 0px; 
+                height: 0px;              
+                }
+
+                .logo2{
+                    width: 0px; 
+                    height: 0px;                    
+                }
+            }
         </style>
         <link rel="stylesheet" href="assets_MF_form/css/Style.css"/>     
     </head>
@@ -123,10 +142,13 @@
                 <legend> Datos personales</legend>
                 <div>                   
                 <label>Nombre:</label>                
-                <input type="text" name="nombre">                
-                <label>Apellido:</label>
-                <input type="text" name="apellido"> 
+                <input type="text" name="nombre">  
                 </div>
+                <br>
+                <div>
+                <label>Apellido:</label>
+                <input type="text" name="apellido">    
+                </div>               
                 <br>
                 <div>
                     <label>Edad:</label>

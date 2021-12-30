@@ -246,11 +246,11 @@ body {
    margin-bottom: 20px;
    border-radius: 4px;
    font-family: 'calibri';
-   color: ;
+   
 }
 
 .pago{
-    background: ;
+    
 }
 
 .mensaje{
@@ -297,4 +297,9 @@ font-size: 16px;
     color: black;
     margin: 16px 0;
     font-size: 16px;
+}
+
+@media (min-height: 375px) 
+{
+    
 }
