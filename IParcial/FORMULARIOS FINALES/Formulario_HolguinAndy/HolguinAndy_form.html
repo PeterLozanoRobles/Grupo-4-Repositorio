@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Tienda de flores</title>
+    <link rel="stylesheet" href="assets_AH_form/css/assets_AH_form.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .logo1 {
+            width: 200px;
+            height: 175px;
+            float: left;
+        }
+
+        .logo1_new {
+            width: 175px;
+            height: 75px;
+            float: left;
+        }
+
+        .logo2 {
+            width: 175px;
+            height: 75px;
+            float: right;
+
+        }
+
+        footer h2 {
+            color: pink;
+
+        }
+
+        footer {
+            text-align: left;
+            color: white;
+            width: 90%;
+            max-width: 1850px;
+            max-height: 140px;
+        }
+
+        #Portada_MF {
+            width: 1100px;
+            height: 500px;
+            border: 15px solid;
+            border-bottom-color: lightblue;
+            border-top-color: lightblue;
+            border-right-color: pink;
+            border-left-color: pink;
+        }
+
+        .integrante {
+            margin-left: 300px;
+            width: 50%;
+            border: 25px solid;
+            border-bottom-color: lightblue;
+            border-top-color: lightblue;
+            border-right-color: pink;
+            border-left-color: pink;
+        }
+
+        strong {
+            color: pink;
+            margin-left: 250px;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="contenedor_menu">
+            <img class="logo1_new" src="assets_AH_form/image/Logo.png" alt="logo">
+            <img class="logo2" src="assets_AH_form/image/Logo.png" alt="logo">
+            <div class="contenedor_pl">
+                <ul class="menu_PL">
+                    <li><a href="FalconeMarjuri.html"><b>Inicio</b></a></li>
+                    <li><a href="MiteLady.html"><b>Nosotros</b></a></li>
+                    <li><a href="FormularioServicios.html"><b>Servicios</b></a></li>
+                    <li><a href="GomezCatalina.html"><b>Sucursales</b></a></li>
+                    <li><a href="LozanoPeter.html"><b>Eventos</b></a></li>
+                    <li><a href=""><b>Formularios</b></a>
+                        <ul>
+                            <li><a href=""><b>Inicio</b></a></li>
+                            <li><a href="MiteLadyForm.html"><b>Nosotros</b></a></li>
+                            <li><a href=""><b>Servicios</b></a></li>
+                            <li><a href=""><b>Sucursales</b></a></li>
+                            <li><a href=""><b>Eventos</b></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+    </header>
+
+
+
+    <section class="registro">
+        <h4>Formulario Registro</h4>
+        <input class="control" type="text" name="Nombre" id="nombre" placeholder="Ingrese sus nombres y apellidos">
+        <input class="control" type="text" name="Telefono" id="telefono" placeholder="Ingrese su teléfono">
+        <input class="control" type="email" name="Correo" id="correo" placeholder="Ingrese su correo">
+
+
+
+        <Label><br>Tpo de arreglo:</Label>
+        <select id="tipo">
+            <option>Circular</option>
+            <option>Trinagular</option>
+            <option>Vertical</option>
+        </select>
+
+        <Label> <br><br> Escoja su ciudad:</Label>
+        <input list="ciudades">
+        <datalist id="ciudades">
+            <option value="Guayaquil">
+            <option value="Quito">
+            <option value="Ambato">
+        </datalist>
+
+        <div class="pago">
+            <label><br> Forma de pago:<br><br> </label>
+            <input type="radio" id="contactChoice1" name="contact" value="email">
+            <label for="contactChoice1">Tarjeta de credito</label>
+
+            <input type="radio" id="contactChoice2" name="contact" value="phone">
+            <label for="contactChoice2">Transferencia bancaria</label>
+        </div>
+
+        <label><br> Mensaje <br></label>
+        <textarea name="mensaje" id="mensaje" cols="40" rows="15"></textarea>
+
+        <p>Estoy de acuerdo con <a href="#">Terminos y condiciones </a></p>
+        <input style="background: pink;" class="boton" type="submit" value="Aceptar">
+
+
+
+    </section>
+
+
+    <footer>
+        <div class="contenedor2_MF">
+            <u class="letrafoo"> Horario de atencion </u>
+            <h5>Lunes a Viernes 09:00 a 18:00</h5>
+            <h5>Sábado 09:00 a 14:00</h5>
+            <u class="letrafoo"> Redes Sociales</u>
+            <p> </p>
+            <a href="#"> <img class="icono" src="assets_AH_form/image/facebook.png" alt="carrito_compra"> </a>
+            <a href="#"> <img class="icono" src="assets_AH_form/image/what.png" alt="carrito_compra"> </a>
+            <a href="#"> <img class="icono" src="assets_AH_form/image/Instagram.png" alt="carrito_compra"> </a>
+            <p>Copyright &copy; 2021 Andy Holguin, todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
