@@ -4,8 +4,6 @@
         <title>Tienda de flores</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets_MF_form/css/Style.css"/>
-        
         <style>
             
             footer h2{
@@ -59,89 +57,8 @@
                 margin-left: 800px;
             }
         </style>
-        
-        <script>
-        window.addEventListener('load', ()=> {
-        const form = document.querySelector('#formulario')
-        const nombreMF = document.getElementById('nombreMF')
-        const apellidoMF = document.getElementById('apellidoMF')
-        const email = document.getElementById('email')
-        const pass = document.getElementById('pass')
-        const passConfirma = document.getElementById('passConfirma')
-
-        form.addEventListener('submit', (e) => {
-            e.preventDefault()
-            validaCampos()
-        })
-
-        const validaCampos = ()=> {
-            //capturar los valores ingresados por el usuario
-            const nombreMF = nombreMF.value.trim()
-            const apellidoMF = apellidoMF.value.trim()
-            const emailValor = email.value.trim()
-            const passValor = pass.value.trim()
-            const passConfirmaValor = passConfirma.value.trim();
-
-            //validando campo usuario
-            //(!usuarioValor) ? console.log('CAMPO VACIO') : console.log(usuarioValor)
-            if(!nombreMF){
-                //console.log('CAMPO VACIO')
-                validaFalla(usuarV , 'Campo vacÃ­o')
-            }else{
-                validaOk(usuario)
-            }
-
-            //validando campo email
-            if(!emailValor){
-                validaFalla(email, 'Campo vacÃ­o')            
-            }else if(!validaEmail(emailValor)) {
-                validaFalla(email, 'El e-mail no es vÃ¡lido')
-            }else {
-                validaOk(email)
-            }
-             //validando campo password
-             const er = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,18}$/          
-             if(!passValor) {
-                 validaFalla(pass, 'Campo vacÃ­o')
-             } else if (passValor.length < 8) {             
-                 validaFalla(pass, 'Debe tener 8 caracteres cÃ³mo mÃ­nimo.')
-             } else if (!passValor.match(er)) {
-                 validaFalla(pass, 'Debe tener al menos una may., una min. y un nÃºm.')
-             } else {
-                 validaOk(pass)
-             }
-
-             //validando campo password ConfirmaciÃ³n
-             if(!passConfirmaValor){
-                 validaFalla(passConfirma, 'Confirme su password')
-             } else if(passValor !== passConfirmaValor) {
-                 validaFalla(passConfirma, 'La password no coincide')
-             } else {
-                 validaOk(passConfirma)
-             }
-
-
-        }
-
-        const validaFalla = (input, msje) => {
-            const formControl = input.parentElement
-            const aviso = formControl.querySelector('p')
-            aviso.innerText = msje
-
-            formControl.className = 'form-control falla'
-        }
-        const validaOk = (input, msje) => {
-            const formControl = input.parentElement
-            formControl.className = 'form-control ok'
-        }
-
-        const validaEmail = (email) => {
-            return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);        
-        }
-
-    })
-        </script>
-             
+        <link rel="stylesheet" href="assets_MF_form/css/Style.css"/>  
+       
     </head>
     
     <body>   
@@ -171,29 +88,30 @@
             </div>
             <br>  
             
-        </header>       
+        </header>
+        
         <h1>Satisfacion del Servicio </h1>
         
         <p></p>
         <div class="marco">
-            <form>
+            <form id="formulario" action="procesar.php">
                 <fieldset class="bordeSty"> 
                 <legend> Datos personales</legend>
                 <div>                   
                 <label>Nombre:</label>                
-                <input type="text" id="nombreMF">                
+                <input type="text" id="letra">                
                 <label>Apellido:</label>
-                <input type="text" id="apellidoMF"> 
+                <input type="text" > 
                 </div>
                 <br>
                 <div>
                     <label>Edad:</label>
-                    <input type="number" id="edadMF" min="18">
+                    <input type="number"  min="18">
                 </div>
                  <br>
                  <div>
                      <label>Telefono</label>
-                     <input type="text" id="telefonoMF"> 
+                     <input type="text" id="numero"> 
                  </div>
                 
                
@@ -243,6 +161,7 @@
             <a href="#"> <img  class="icono" src="assets_MF_form/image/Instagram.png" alt="carrito_compra"> </a>
             <p>Copyright &copy; 2021 Marjorie Falcone, todos los derechos reservados.</p>
         </div>           
-     </footer>              
+     </footer> 
+        <script src="Vainilla.js"></script>
     </body>
 </html>
