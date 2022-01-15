@@ -1,0 +1,229 @@
+
+    
+/*****************************************************/
+
+.contenedor_menu{
+padding-bottom: 50px;
+font-style: italic;
+}
+
+.contenedor_pl{
+    width: 100%;
+    text-align: center;
+}
+
+
+.letraMenu{
+    background: pink;   
+    text-align: center;
+}
+
+.contenedor2_MF{
+    background: black;
+    width: 1295px;
+    font-size: 20px; 
+    line-height:0;
+    padding: 20px 20px 20px 20px;
+    
+}
+
+.icono{
+    width: 40px; 
+    height: 40px
+}
+
+.letrafoo{
+    color: pink;    
+}
+
+footer{
+    width: 1310px;
+    font-style: italic;
+}
+
+.contenedor_secundario1_pl{
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 25px;
+}
+
+.nombres_pl{
+    background: pink;
+    display:inline-block;
+    width: 400px;
+    font-style: italic;
+    text-align: center;
+    color: black;
+}
+
+.nombres1_pl{
+    background: lightblue;
+    display:inline-block;
+    width: 400px;
+    font-style: italic;
+    text-align: center;
+    color: black;
+}
+
+.nombres_pl_1{
+    display:inline-block;
+    width: 400px;
+    font-style: italic;
+    color: black;
+    text-align: center;
+}
+
+
+.imagen_cuadro_pl img{
+    padding-top: 20px;
+    width: 250px;
+    height: 300px;
+    padding-bottom: 10px;
+}
+
+.texto_precio_pl{
+    text-align: center;
+    border-color: pink;
+    border-style: dashed;
+}
+
+.menu_PL{
+    list-style: none;
+    padding: 0;
+    background: lightblue;
+    width:90%;
+    max-width: 900px;
+    max-height: 140px;
+    margin: auto; 
+    font-size: 16px;
+}
+
+header{
+    margin:auto;
+    width: 1200px;
+    font-family: helvetica;
+    background: lightblue;
+    padding: 40px;
+}
+
+ul{
+    list-style: none;
+}
+
+.menu_PL li a{
+    background: lightblue;
+    color: white;
+    text-decoration: none;
+    padding: 20px 25px;
+    display: block;
+}
+
+.menu_PL li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu_PL > li{
+    float:left;
+}
+
+.menu_PL li a:hover{
+    background: pink;
+    border-style: dashed; border-color: white;
+}
+
+.menu_PL li ul{
+    display: none;
+    position: absolute;
+    min-width: 300px;
+}
+
+.menu_PL li:hover > ul{
+    display: block
+}
+
+
+.contenedor_parrafo_AH{
+    border: 15px solid; 
+    border-bottom-color: lightblue;
+    border-top-color: lightblue;
+    border-right-color: pink;
+    border-left-color: pink;
+    margin-top: 30px;
+}
+
+*{
+    font-style: italic;
+}
+
+.introducción_AH{
+    background: lightblue;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4%;
+    font-size: 26px;
+    margin: 0 auto;
+}
+
+#titulo_arreglos_AH{
+    background: pink;
+    text-align: center;
+}
+
+.titulo_1_AH{
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+    margin:0 auto;
+    background: pink;
+    max-width: 800px;
+}
+
+.imagenes_arreglos_AH{
+    width: 400px;
+    font-style: italic;
+    color: black;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.imagenes_flores_AH{
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+.imagenes_flores_AH img{
+    border: 10px solid;
+    color: pink;
+}
+
+.contenedor_principal_arreglos_AH{
+  text-align: center;
+  padding-bottom:30px;
+  padding-top: 25px;
+}
+
+.florales_AH{
+    width: 200px;
+    height: 250px;
+    display: inline;
+ }
+ 
+ .video{
+     text-align: center;
+     margin: 0 auto;
+ }
+ 
+ .logos_AH{
+    padding-top: 5px;
+            }
+            
+.logos2_AH{
+    float: right;
+    padding-top: 5px;
+}
