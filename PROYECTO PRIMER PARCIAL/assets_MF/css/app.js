@@ -3,6 +3,8 @@ window.addEventListener('load', ()=> {
     const usuario = document.getElementById('usuario')
     const email = document.getElementById('email')
     const pass = document.getElementById('pass')
+    const termino = document.getElementById('termino')
+    const sexo = document.getElementById('sexo')
     const passConfirma = document.getElementById('passConfirma')
 
     form.addEventListener('submit', (e) => {
@@ -54,7 +56,17 @@ window.addEventListener('load', ()=> {
          } else {
              validaOk(passConfirma)
          }
-
+         
+         //validar termino
+         if(termino.value==="0"){
+             validaFalla(termino, 'Acepte termino y condiciones')
+         }
+         
+         //validar sexo
+         if(sexo.value==="0"){
+             validaFalla(sexo, 'seleccione un sexo')
+         }
+         
 
     }
 

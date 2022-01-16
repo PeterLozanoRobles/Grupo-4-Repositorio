@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validación de formularios</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"/> 
     <link rel="stylesheet" href="assets_MF/css/style.css">
     <link rel="stylesheet" href="Assets/css/Style.css">
      <style>
@@ -70,6 +71,9 @@
             button{
                 background-color: pink;
             }
+            .ter{
+                text-align: left;
+            }
         </style>
 </head>
 <body>
@@ -113,10 +117,20 @@
 
             <div class="form-control">
                 <label for="email">E-mail</label>
-                <input id="email" type="email">
+                <input id="email" type="email" >
                 <p></p>                
             </div>
-
+            
+            <div class="form-control">
+                <label for="sexo">Sexo:</label>
+                    <select name="sexo" id="sexo">
+                        <option value="0" >Seleccione..</option>
+                        <option value="1" >Femenino</option>
+                        <option value="2">Masculino</option>                                   
+                    </select> 
+                <p></p>
+            </div>
+            
             <div class="form-control">
                 <label for="pass">Password</label>
                 <input id="pass" type="password">
@@ -125,10 +139,16 @@
 
             <div class="form-control">
                 <label for="passConfirma">Confirmar Password</label>
-                <input id="passConfirma" type="password">
+                <input id="passConfirma" type="password" >
                 <p></p>                
             </div>
             
+            <div class="form-control">
+                <input type="checkbox" id="termino" value="0"> 
+                <label for="termino">Acepto termino y condiciones</label>
+                <p></p>
+            </div>
+            <p></p>
             <button>Enviar</button>
         </form>
     </div>
