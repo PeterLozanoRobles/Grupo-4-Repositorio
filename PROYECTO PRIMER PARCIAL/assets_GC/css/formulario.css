@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+ }
+ .registro-sucursales{
+     width:500px;
+     background:lightblue;
+     padding: 30px;
+     margin: auto;
+     margin-top: 100px;
+     border-radius: 10px;
+     font-family: calibri;
+    
+     
+      
+}
+.registro-sucursales h4{
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+.registro-sucursales h5{
+    font-size: 20px;
+    
+    text-align: left;
+    color:blue;
+    
+}
+.contenedor{
+    width: 100%;
+    background: #f8d8dd;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border:1px solid violet;
+    font-family: calibri;
+    font-size: 18px;
+}
+.contenedorO{
+  text-align: center;
+}
+.registro-sucursales .boton {
+    
+    background: lightpink;
+    color:black;
+    font-size: 16px;
+    width:100px; 
+    margin: 15px -40px; 
+    position:relative;
+    left:50%;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 2px solid black;
+    
+    
+}
+.registro-sucursales .boton:hover{
+    background: lightblue;
+    
+}
