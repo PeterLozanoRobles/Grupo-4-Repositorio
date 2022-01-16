@@ -58,7 +58,7 @@ window.addEventListener('load', ()=> {
          }
          
          //validar termino
-         if(termino.value==="0"){
+         if(!termino.checked){
              validaFalla(termino, 'Acepte termino y condiciones')
          }
          
