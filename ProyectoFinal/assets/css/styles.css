@@ -1,0 +1,35 @@
+.barraNavegacion{
+    background: #007bff;
+}
+
+.barraNavegacion ul li a{
+    color: rgba(255,255,255,.7) !important;
+}
+.barraNavegacion ul li a:hover{
+    color: rgba(255,255,255,.9) !important;
+}
+.jumbotron {
+  opacity: 0.8;
+  color: black;
+ margin-top: 30px;
+  margin-bottom: 0px; }
+
+.titNivel1 {
+  color: #007bff;
+  background: #cee6ff;
+  border-radius: 0px; }
+
+.tabladatos tr td{
+    padding: 3px ;
+}
+
+.footer {
+  padding: 10px 20px 0px 20px;
+  background-color: #dedede;
+  opacity: 0.8;
+  margin-top: 10px;
+  margin-bottom: 0px; }
+
+.footer a {
+  color: #007bff;
+  text-decoration: underline; }
