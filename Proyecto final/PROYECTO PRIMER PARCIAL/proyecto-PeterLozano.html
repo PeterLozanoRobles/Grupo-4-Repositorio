@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Tienda de flores</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .contenedor_principal_pl .contenedor_secundario_pl{
+                background: lightblue;
+                width: 1335px;
+            }
+            
+            .logo1{
+                width: 200px; 
+                height: 175px;
+                float: left;
+            }
+            
+            .logo1_new{
+                width: 175px; 
+                height: 75px;
+                float: left;
+            }
+            
+            .logo2{
+                width: 175px; 
+                height: 75px;
+                float: right;
+
+            }
+            
+            footer h2{
+                color: pink;
+            }
+            
+            footer{
+                text-align: left;
+                color: white;
+                width:90%;
+                max-width: 1850px;
+                max-height: 140px;
+            }
+            
+            #Portada_MF{
+                width: 1100px;
+                height: 500px;
+                border: 15px solid; 
+                border-bottom-color: lightblue;
+                border-top-color: lightblue;
+                border-right-color: pink;
+                border-left-color: pink;
+            }
+            .integrante{
+                margin-left: 300px;
+                width: 50%;             
+                border: 25px solid; 
+                border-bottom-color: lightblue;
+                border-top-color: lightblue;
+                border-right-color: pink;
+                border-left-color: pink;
+            }
+            strong{
+                color: pink;
+                margin-left: 250px;
+            }
+            
+            .tit{
+                padding: 15px;
+                background: pink;
+                text-decoration: none;
+                color: white;
+                margin-left: 5px;
+                margin-right: 5px
+                
+            }
+            .tit:hover{
+                background: lightblue;
+                border-style: dashed;
+                border-color: pink;
+            }
+            #contenido{
+                border: 1px solid pink;
+                margin-top:9px;
+                padding: 10px;
+            }
+            
+            h1{
+                font-size: 40px;
+                text-align: center;
+                font-style: italic;
+                color: lightblue;
+                
+            }
+        </style>
+        <link rel="stylesheet" href="assets_PL/css/Style.css"/>     
+    </head>
+    
+    <body>   
+        <header>
+            <div class="contenedor_menu">
+                <img class="logo1_new" src="assets_PL/image/Logo.png" alt="logo">
+                <img class="logo2" src="assets_PL/image/Logo.png" alt="logo">
+                <div class="contenedor_pl">
+                <ul class="menu_PL">
+                    <li><a href="proyecto-MarjorieFalcone.html"><b>Inicio</b></a></li>
+                    <li><a href="proyecto-LadyMite.html"><b>Nosotros</b></a></li>
+                    <li><a href="proyecto-AndyHolguin.html"><b>Servicios</b></a></li>
+                    <li><a href="proyecto-CatalinaGomez.html"><b>Sucursales</b></a></li>
+                    <li><a href="proyecto-PeterLozano.html"><b>Eventos</b></a></li>
+					<li><a href=""><b>Forms</b></a></li>
+                </ul>
+                </div>
+            </div>
+            <br>            
+        </header>               
+        
+        <h2 style="font-style: italic; text-align: center; background: pink; margin-top: 30px; margin-bottom: 10px;">EVENTOS</h2>
+        
+        <div id="titulos">
+            <a class="tit" id="uno" onmouseover="cambiarPestania(this)" href="#">Cena familiar</a>
+            <a class="tit" id="dos" onmouseover="cambiarPestania(this)" href="#">Cita Romantica</a>
+            <a class="tit" id="tres" onmouseover="cambiarPestania(this)" href="#">Cumpleaños</a>
+            <a class="tit" id="cuatro" onmouseover="cambiarPestania(this)" href="#">Matrimonios</a>
+            <a class="tit" id="cinco" onmouseover="cambiarPestania(this)" href="#">Graduaciones</a>
+            <a class="tit" id="seis" onmouseover="cambiarPestania(this)" href="#">Funerales</a>
+        </div><br>
+        
+        <div id="contenido">
+                                   
+        </div><br>
+        
+        <div class="contenedor_flex">
+            <div class="nombres_pl_1">
+                    <div class="nombres1_pl">
+                <!--9--><h3 style=" text-align: center;"> Matrimonio </h3>
+                    </div><br>
+                    <div class="imagen_cuadro_pl">
+                        <img src="assets_PL/image/matrimonio.jpg" alt="imagen" style="border-radius: 15%">
+                    </div>
+                    <div class="texto_precio_pl">
+                        <!--10--><p><!--11--><b>PRECIO:</b> $14,99</p>
+                        <p><b>DETALLE:</b> Flores blancas en ramo con
+                        mini florecitas blanca de base con cinta blanca.</p>
+                    </div>
+                </div>
+                
+                <div class="nombres_pl_1">
+                    <div class="nombres_pl">
+                        <h3 style=" text-align: center;"> Cumpleaños </h3>
+                    </div>
+                    <div class="imagen_cuadro_pl">
+                        <img src="assets_PL/image/cumpleaños.jpg" alt="imagen" style="border-radius: 15%">
+                    </div>
+                    <div class="texto_precio_pl">
+                        <p><b>PRECIO:</b> $14,99</p>
+                        <p><b>DETALLE:</b> Rosas rojas y flores
+                        rosa en cesta con bombones Ferrero.</p>
+                    </div>
+                </div>
+                
+                <div class="nombres_pl_1">
+                    <div class="nombres1_pl">
+                        <h3 style=" text-align: center;"> Funeral </h3>
+                    </div>
+                    <div class="imagen_cuadro_pl">
+                        <img src="assets_PL/image/funeral.jpg" alt="imagen" style="border-radius: 15%">
+                    </div>
+                    <div class="texto_precio_pl">
+                        <p><b>PRECIO:</b> $14,99</p>
+                        <p><b>DETALLE:</b> Rosas blancas perlas
+                        con listón blanco y franjas doradas.</p>
+                    </div>
+                </div><br>
+                
+                <div class="nombres_pl_1">
+                    <div class="nombres_pl">
+                        <h3 style=" text-align: center;"> Cita Romantica </h3>
+                    </div><br>
+                    <div class="imagen_cuadro_pl">
+                        <img src="assets_PL/image/cita.jpg" alt="imagen" style="border-radius: 15%">
+                    </div>
+                    <div class="texto_precio_pl">
+                        <p><b>PRECIO:</b> $14,99</p>
+                        <p><b>DETALLE:</b> Girasol amarilla al centro
+                        con lazos dorados y tulipanes alrededor.</p>
+
+                    </div>
+                </div>
+                
+                <div class="nombres_pl_1">
+                    <div class="nombres1_pl">
+                        <h3 style=" text-align: center;"> Cena Familiar </h3>
+                    </div>
+                    <div class="imagen_cuadro_pl">
+                        <img src="assets_PL/image/cena.jpg" alt="imagen" style="border-radius: 15%">
+                    </div>
+                    <div class="texto_precio_pl">
+                        <p><b>PRECIO:</b> $14,99</p>
+                        <p><b>DETALLE:</b> Flores rosadas en florero
+                        decorado con rodajas de limones.</p>
+                    </div>
+                </div>
+                
+                <div class="nombres_pl_1">
+                    <div class="nombres_pl">
+                        <h3 style=" text-align: center;"> Graduación </h3>
+                    </div>
+                    <div class="imagen_cuadro_pl">
+                        <img src="assets_PL/image/graduacion.jpg" alt="imagen" style="border-radius: 15%">
+                    </div>
+                    <div class="texto_precio_pl">
+                        <p><b>PRECIO:</b> $14,99</p>
+                        <p><b>DETALLE:</b> Varios tipos de flores 
+                        color frutos rojos en un arreglo decorativo.</p>
+                    </div>
+                </div>
+        </div>
+        
+        <script>
+            function cambiarPestania(nodoA) {
+                // obtener los elementos a manipular
+                let div = document.getElementById("contenido");
+
+                let id = nodoA.getAttribute("id");
+                let cont = "";
+                switch (id) {
+                    case "uno":
+                        cont= "<center><h1> Cenas Familiares </h1></center>\n\
+        \n\                     <center><img src=assets_PL/image/cenajs.jpeg alt=imagen width=800px height=350px></center>\n\
+                                <center><p><i><b>Flores rosadas en florero decorado con rodajas de limones.</b><br> \n\
+                                Queremos que nuestros arreglos puedan hacer de sus cenas familiares lo más<br> \n\
+                                elegantes posible..</i></p></center>";
+                        break;
+                    case "dos":
+                        cont = "<center><h1> Citas Romanticas </h1></center>\n\
+        \n\                     <center><img src=assets_PL/image/citajs.jpg alt=imagen width=800px height=350px></center>\n\
+                                <center><p><i><b> Rosas rojas y flores rosa en cesta con bombones Ferrero.</b><br> \n\
+                                Nuestros arreglos floreles para vuestras citas son la mejor opción sin duda<br>\n\
+                                puesto a nuestra experiencia en ello podemos hacer de su cita un lugar armonioso y apasioando.</i></p></center>";
+                        break;
+                    case "tres":
+                        cont = "<center><h1> Cumpleaños </h1></center>\n\
+        \n\                     <center><img src=assets_PL/image/cumpleañosjs.jpg alt=imagen width=800px height=350px></center>\n\
+                                <center><p><i><b>Rosas blancas perlas con listón blanco y franjas doradas.</b><br> \n\
+                                </i></p></center>";
+                        
+                        break;
+                    case "cuatro":
+                        cont = "<center><h1> Matrimonios </h1></center>\n\
+        \n\                     <center><img src=assets_PL/image/matrimoniojs.jpg alt=imagen width=800px height=350px></center>\n\
+                                <center><p><i><b>Flores blancas en ramo con mini florecitas blanca de base con cinta blanca.</b><br> \n\
+                                </i></p></center>";
+                        
+                        break;
+                    case "cinco":
+                        cont = "<center><h1> Graduaciones </h1></center>\n\
+        \n\                     <center><img src=assets_PL/image/graduacionjs.jpg alt=imagen width=800px height=350px></center>\n\
+                                <center><p><i><b>Rosas blancas perlas con listón blanco y franjas doradas.</i></p></center>";
+                        
+                        break;
+                    case "seis":
+                        cont = "<center><h1> Funerales </h1></center>\n\
+        \n\                     <center><img src=assets_PL/image/funeraljs.webp alt=imagen width=800px height=350px></center>\n\
+                                <center><p><i><b>Rosas blancas perlas con listón blanco y franjas doradas.</b><br> \n\
+                                </i></p></center>";
+                        
+                        break;
+                }
+                div.innerHTML = cont;    
+                
+                //limpiar los estilos a todos los enlaces
+                let enlaces = document.querySelectorAll("#titulos a");// retorna un arreglo de objetos
+                   // console.log(enlaces);
+                for(let i=0; i<enlaces.length;i++){
+                    enlaces[i].style.border='lightblue';
+                    enlaces[i].style.background = 'pink';
+                }   
+        
+        
+                // cambiar el enlace seleccionado
+                nodoA.style.border="1px solid pink";
+                nodoA.style.background="lightblue";
+                
+              //  nodoA.setAttribute("style","background:violet");
+                
+                
+            }
+
+        </script>
+        
+     <footer> 
+        <div class="contenedor2_MF">
+            <u class="letrafoo"> Horario de atencion </u>             
+            <h5>Lunes a Viernes 09:00 a 18:00</h5>
+            <h5>Sábado 09:00 a 14:00</h5>
+            <u class="letrafoo"> Redes Sociales</u>
+            <p> </p>
+            <a href="#"> <img  class="icono" src="assets_PL/image/facebook.png" alt="carrito_compra"> </a>
+            <a href="#"> <img  class="icono" src="assets_PL/image/what.png" alt="carrito_compra"> </a>
+            <a href="#"> <img  class="icono" src="assets_PL/image/Instagram.png" alt="carrito_compra"> </a>
+            <p>Copyright &copy; 2021 Marjorie Falcone, todos los derechos reservados.</p>
+        </div>           
+     </footer>    
+    </body>
+</html>
+

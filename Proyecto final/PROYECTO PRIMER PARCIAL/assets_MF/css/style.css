@@ -1,0 +1,259 @@
+
+body {
+    font-family: cursive;  
+}
+
+.contenedor {
+    margin-bottom: 100px;
+    margin-left: 400px;
+    padding: 0;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 19px 20px 8px -9px rgba(0,0,0,0.2);
+    overflow: hidden;
+    width: 500px;
+    max-width: 100%;
+    align-content: center;
+    box-sizing: border-box;
+}
+.cabecera {
+    background: lightblue;
+    color:azure;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 40px;
+}
+#formulario {
+    padding: 50px 20px;
+    margin-left: 50px
+}
+
+.form-control {    
+    margin-bottom: 7px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 7px;
+    font:100px;
+}
+
+.form-control input {
+    border: none;
+    width: 250px;
+    background-color: #f0f0f0;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 12px;
+       
+}
+.form-control, input:focus {
+    outline: none;
+}
+
+.form-control.ok input {
+    border: 0.1px solid;
+    border-color: #08ffc8;
+}
+.form-control.falla input {
+    border: 0.1px solid;
+    border-color: #fe5f55;
+}
+
+#formulario button {
+    background: #fd4f00;
+    border:1px solid #fd5f00;
+    border-radius: 2px;
+    color: #f6f6e9;
+    display: block;
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+}
+.form-control p {
+    visibility: hidden;
+    position: absolute;
+    font-size: small;
+    font-weight: 500;
+    text-align: right;
+}
+
+.form-control.falla p {
+    visibility: visible;
+    color:#e74c3c;
+}
+
+.logo1{
+width: 200px; 
+height: 175px;
+float: left;
+}
+            
+.logo1_new{
+width: 175px; 
+height: 75px;
+float: left;
+}
+            
+.logo2{
+width: 175PX; 
+height: 75px;
+float: right;
+}
+		 
+.contenedor_menu{
+padding-bottom: 50px;
+font-style: italic;
+}
+
+.contenedor_pl{
+    width: 100%;
+    text-align: center;
+}
+
+
+.letraMenu{
+    background: pink;   
+    text-align: center;
+}
+
+.contenedor2_MF{
+    background: black;
+    width: 1300px;
+    font-size: 18px; 
+	padding: 20px;
+}
+
+.icono{
+    width: 40px; 
+    height: 40px
+}
+
+.letrafoo{
+    color: pink;    
+}
+
+footer{
+    width: 1500px;
+    font-style: italic;
+}
+
+.contenedor_secundario1_pl{
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 25px;
+}
+
+.nombres_pl{
+    background: pink;
+    display:inline-block;
+    width: 400px;
+    font-style: italic;
+    text-align: center;
+    color: black;
+}
+
+.nombres1_pl{
+    background: lightblue;
+    display:inline-block;
+    width: 400px;
+    font-style: italic;
+    text-align: center;
+    color: black;
+}
+
+.nombres_pl_1{
+    display:inline-block;
+    width: 400px;
+    font-style: italic;
+    color: black;
+    text-align: center;
+}
+
+
+.imagen_cuadro_pl img{
+    padding-top: 20px;
+    width: 250px;
+    height: 300px;
+    padding-bottom: 10px;
+}
+
+.texto_precio_pl{
+    text-align: center;
+    border-color: pink;
+    border-style: dashed;
+}
+
+.menu_PL{
+    list-style: none;
+    padding: 0;
+    background: lightblue;
+    width:90%;
+    max-width: 900px;
+    max-height: 140px;
+    margin: auto; 
+    font-size: 16px;
+}
+
+header{
+    margin:auto;
+    margin-top: 10px;
+    width: 1300px;
+    font-family: helvetica;
+    background: lightblue;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+ul{
+    list-style: none;
+}
+
+.menu_PL li a{
+    background: lightblue;
+    color: white;
+    text-decoration: none;
+    padding: 20px 25px;
+    display: block;
+}
+
+.menu_PL li{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu_PL > li{
+    float:left;
+}
+
+.menu_PL li a:hover{
+    background: pink;
+    border-style: dashed; border-color: white;
+}
+
+.menu_PL li ul{
+    display: none;
+    position: absolute;
+    min-width: 300px;
+}
+
+.menu_PL li:hover > ul{
+    display: block
+}
+
+
+.centro{
+    background-color:lavenderblush;
+    text-align: center;
+    font-size: 25px;
+    box-sizing: content-box;
+    }
+.tema{
+    background-color:mistyrose;
+     text-align: center;
+     font-family: Calisto MT;
+    
+}

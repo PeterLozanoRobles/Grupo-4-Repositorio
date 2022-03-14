@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Tienda de flores</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /***************************************************************************/
+        .tit {
+            padding: 15px;
+            background: pink;
+            text-decoration: none;
+            color: white;
+            margin-left: 5px;
+            margin-right: 5px
+        }
+
+        .tit:hover {
+            background: lightblue;
+            border-style: dashed;
+            border-color: pink;
+        }
+
+        #titulos {
+            text-align: center;
+            display: block;
+            border-style: dashed;
+            border-color: lightblue;
+            padding: 30px;
+        }
+
+        /***************************************************************************/
+
+        .contenedor_principal_pl .contenedor_secundario_pl {
+            background: lightblue;
+            width: 1335px;
+        }
+
+        .logo1 {
+            width: 200px;
+            height: 175px;
+            float: left;
+        }
+
+        .logo1_new {
+            width: 175px;
+            height: 75px;
+            float: left;
+        }
+
+        .logo2 {
+            width: 175px;
+            height: 75px;
+            float: right;
+
+        }
+
+        footer h2 {
+            color: pink;
+        }
+
+        footer {
+            text-align: left;
+            color: white;
+            width: 90%;
+            max-width: 1850px;
+            max-height: 140px;
+        }
+
+        #Portada_MF {
+            width: 1100px;
+            height: 500px;
+            border: 15px solid;
+            border-bottom-color: lightblue;
+            border-top-color: lightblue;
+            border-right-color: pink;
+            border-left-color: pink;
+        }
+
+        .integrante {
+            margin-left: 300px;
+            width: 50%;
+            border: 25px solid;
+            border-bottom-color: lightblue;
+            border-top-color: lightblue;
+            border-right-color: pink;
+            border-left-color: pink;
+        }
+
+        strong {
+            color: pink;
+            margin-left: 250px;
+        }
+
+        @media (max-width: 500px) {
+            .contenedor2_MF {
+                background-color: black;
+                width: 400px;
+            }
+
+            .contenedor_principal_pl .contenedor_secundario_pl {
+                background: lightblue;
+                width: 400px;
+            }
+
+            .logo1_new {
+                width: 0px;
+                height: 0px;
+            }
+
+            .logo2 {
+                width: 0px;
+                height: 0px;
+            }
+
+
+        }
+    </style>
+    <link rel="stylesheet" href="assets_GC/css/Style_GRM.css" />
+</head>
+
+<body>
+    <header>
+        <div class="contenedor_menu">
+            <img class="logo1_new" src="assets_GC/image/Logo.png" alt="logo">
+            <img class="logo2" src="assets_GC/image/Logo.png" alt="logo">
+            <div class="contenedor_pl">
+                <ul class="menu_PL">
+                    <li><a href="proyecto-MarjorieFalcone.html"><b>Inicio</b></a></li>
+                    <li><a href="proyecto-LadyMite.html"><b>Nosotros</b></a></li>
+                    <li><a href="proyecto-AndyHolguin.html"><b>Servicios</b></a></li>
+                    <li><a href="proyecto-CatalinaGomez.html"><b>Sucursales</b></a></li>
+                    <li><a href="proyecto-PeterLozano.html"><b>Eventos</b></a></li>
+					<li><a href=""><b>Forms</b></a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+    </header>
+
+    <div class="horarios_GC">
+        <!-- 11 -->
+        <section>
+            <div class="tema_GC">
+                <!-- 12 -->
+                <h2 style="color: black">*Sucursales*</h2>
+            </div>
+        </section>
+    </div>
+
+    <div class="tema">
+        <div>
+            <!-- 13 -->
+            <h1 style="margin-bottom: 50px">Panel de las sucursales por ciudades</h1>
+        </div>
+    </div>
+ 
+
+    <div id="titulos">
+        <a class="tit" id="uno" onclick="cambiarPestania(this)" href="#">Guayaquil</a>
+        <a class="tit" id="dos" onclick="cambiarPestania(this)" href="#">Quito</a>
+        <a class="tit" id="tres" onclick="cambiarPestania(this)" href="#">Cuenca</a>
+    </div><br>
+
+    <div id="contenido">
+    </div>
+
+
+
+    <footer>
+        <div class="contenedor2_MF">
+            <u class="letrafoo"> Horario de atencion </u>
+            <h5>Lunes a Viernes 09:00 a 18:00</h5>
+            <h5>Sábado 09:00 a 14:00</h5>
+            <u class="letrafoo"> Redes Sociales</u>
+            <p> </p>
+            <a href="#"> <img class="icono" src="assets_GC/image/facebook.png" alt="carrito_compra"> </a>
+            <a href="#"> <img class="icono" src="assets_GC/image/what.png" alt="carrito_compra"> </a>
+            <a href="#"> <img class="icono" src="assets_GC/image/Instagram.png" alt="carrito_compra"> </a>
+            <p>Copyright &copy; 2021 Marisol Gomez, todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function cambiarPestania(nodoA) {
+            //obtener los elementos a manipular
+            let div = document.getElementById("contenido");
+            let id = nodoA.getAttribute("id");
+            let cont = "";
+
+            switch (id) {
+                case "uno":
+                    cont = "<center><img src=assets_GC/image/FloreriaKYS.jpg alt=FloreriaKYS> \n\
+                    <h2>Florerias en Guayaquil KYS</h2> \n\
+                    <b>Dirección:</b> Avenida 24 NO 534, Guayaquil 090510<br> \n\
+                    <b>Horario de atención: </b> Lunes a viernes de 7:00-17:00<br> \n\
+                    <b>Salud y seguridad: </b> Se requiere el uso de mascarilla <br> \n\
+                    <b>Teléfono: </b> 099 970 4658 <br> \n\
+                    <br><b>Google map </b>(Clic aquí abajo...)<br>\n\
+                    <br><a>\n\
+                        <br><a href=https://www.google.com/maps/place/Florerias+en+Guayaquil+KYS+flowers/@-2.1641509,-79.915433,14z/data=!4m8!1m2!2m1!1ssucursales+de+flores+guayaquil!3m4!1s0x902d6d08dc514acb:0xa0ccec9dcfa87dc9!8m2!3d-2.163718!4d-79.9025729><img  class=icono src=assets_GC/image/map.png alt=map></a> \n\
+                        <\center>";
+                    break;
+
+                    case "dos":
+                    cont = "<center><img src=assets_GC/image/Floreria_Guayquil.jpg alt=FloreriaKYS> \n\
+                    <h2>Floreria la Orquidea</h2> \n\
+                    <b>Dirección:</b> La avenida Amazonas a su paso por La Mariscal., Quito 090510<br> \n\
+                    <b>Horario de atención: </b> Lunes a viernes de 7:00-17:00<br> \n\
+                    <b>Salud y seguridad: </b> Se requiere el uso de mascarilla <br> \n\
+                    <b>Teléfono: </b> 099 970 4622 <br> \n\
+                    <br><b>Google map </b>(Clic aquí abajo...)<br>\n\
+                    <br><a>\n\
+                        <br><a href=https://www.google.com/maps/dir//venta+de+flores+en+quito/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x91d58ff88d878ca9:0x1be98de8076a891c?sa=X&ved=2ahUKEwjH4b7x0bT1AhVtSDABHSboDf8Q9Rd6BAgIEAU><img  class=icono src=assets_GC/image/map.png alt=map></a> \n\
+                        <\center>";
+                    break;  
+
+                    case "tres":
+                    cont = "<center><img src=assets_GC/image/flor_cuenca.jpg alt=FloreriaKYS> \n\
+                    <h2>Glamour Florería - Cuenca</h2> \n\
+                    <b>Dirección:</b> Av. de las Americas &, Cuenca, Cuenca 090510<br> \n\
+                    <b>Horario de atención: </b> Lunes a viernes de 7:00-17:00<br> \n\
+                    <b>Salud y seguridad: </b> Se requiere el uso de mascarilla <br> \n\
+                    <b>Teléfono: </b> 099 970 4633 <br> \n\
+                    <br><b>Google map </b>(Clic aquí abajo...)<br>\n\
+                    <br><a>\n\
+                        <br><a href=https://www.google.com/maps/place/Glamour+Florer%C3%ADa+-+Cuenca/@-2.8898279,-79.0366888,13z/data=!4m9!1m2!2m1!1sflorerias+en+cuenca!3m5!1s0x91cd22a678210baf:0x2bbdb48c8c49368e!8m2!3d-2.8948992!4d-79.0247062!15sChNmbG9yZXJpYXMgZW4gY3VlbmNhWhUiE2Zsb3JlcmlhcyBlbiBjdWVuY2GSAQdmbG9yaXN0><img  class=icono src=assets_GC/image/map.png alt=map></a> \n\
+                        <\center>";
+                    break;
+            }
+
+            div.innerHTML = cont;
+
+
+            //limpiar los estilos a todos los enlaces
+            let enlaces = document.querySelectorAll("#titulos a");// retorna un arreglo de objetos
+            // console.log(enlaces);
+            for (let i = 0; i < enlaces.length; i++) {
+                enlaces[i].style.border = 'lightblue';
+                enlaces[i].style.background = 'pink';
+            }
+
+            //cambia el  enlace seleccionado
+            nodoA.style.border = "1px solid pink";
+            nodoA.style.background = "lightblue";
+
+        }
+    </script>
+
+</body>
+
+</html>

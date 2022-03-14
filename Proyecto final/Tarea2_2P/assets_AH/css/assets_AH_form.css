@@ -1,0 +1,305 @@
+.contenedor_menu{
+    padding-bottom: 50px;
+    font-style: italic;
+    }
+    
+    .contenedor_pl{
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    .letraMenu{
+        background: pink;   
+        text-align: center;
+    }
+    
+    .contenedor2_MF{
+        background: black;
+        width: 1295px;
+        font-size: 20px; 
+        line-height:0;
+        padding: 20px 20px 20px 20px;
+        
+    }
+    
+    .icono{
+        width: 40px; 
+        height: 40px
+    }
+    
+    .letrafoo{
+        color: pink;    
+    }
+    
+    footer{
+        width: 1310px;
+        font-style: italic;
+    }
+
+.contenedor_menu{
+    padding-bottom: 60px;
+    font-style: italic;
+    }
+    
+    .contenedor_pl{
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    .letraMenu{
+        background: pink;   
+        text-align: center;
+    }
+    
+    .contenedor2_MF{
+        background: black;
+        width: 1295px;
+        font-size: 20px; 
+        line-height:0;
+        padding: 20px 20px 20px 20px;
+        
+    }
+    
+    .icono{
+        width: 40px; 
+        height: 40px
+    }
+    
+    .letrafoo{
+        color: pink;    
+    }
+    
+    footer{
+        width: 1310px;
+        font-style: italic;
+    }
+    
+    .contenedor_secundario1_pl{
+      text-align: center;
+      padding-bottom: 30px;
+      padding-top: 25px;
+    }
+    
+    .nombres_pl{
+        background: pink;
+        display:inline-block;
+        width: 400px;
+        font-style: italic;
+        text-align: center;
+        color: black;
+    }
+    
+    .nombres1_pl{
+        background: lightblue;
+        display:inline-block;
+        width: 400px;
+        font-style: italic;
+        text-align: center;
+        color: black;
+    }
+    
+    .nombres_pl_1{
+        display:inline-block;
+        width: 400px;
+        font-style: italic;
+        color: black;
+        text-align: center;
+    }
+    
+    
+    .imagen_cuadro_pl img{
+        padding-top: 20px;
+        width: 250px;
+        height: 300px;
+        padding-bottom: 10px;
+    }
+    
+    .texto_precio_pl{
+        text-align: center;
+        border-color: pink;
+        border-style: dashed;
+    }
+    
+    .menu_PL{
+        list-style: none;
+        padding: 0;
+        background: lightblue;
+        width:90%;
+        max-width: 900px;
+        max-height: 140px;
+        margin: auto; 
+        font-size: 16px;
+    }
+    
+    header{
+        margin:auto;
+		margin-top: 0;
+        width: 1200px;
+        font-family: helvetica;
+        background: lightblue;
+        padding: 40px;
+    }
+    
+    ul{
+        list-style: none;
+    }
+    
+    .menu_PL li a{
+        background: lightblue;
+        color: white;
+        text-decoration: none;
+        padding: 20px 25px;
+        display: block;
+    }
+    
+    .menu_PL li{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .menu_PL > li{
+        float:left;
+    }
+    
+    .menu_PL li a:hover{
+        background: pink;
+        border-style: dashed; border-color: white;
+    }
+    
+    .menu_PL li ul{
+        display: none;
+        position: absolute;
+        min-width: 300px;
+    }
+    
+    .menu_PL li:hover > ul{
+        display: block
+    }
+    
+    .contenedor_form{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .form_reservacion{
+        width: 400px;
+        background: lightblue;
+        padding: 30px;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 4px;
+        color:black;
+    }
+    
+    .form_reservacion h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .casillas{
+        width: 100%;
+        background: pink;
+        padding: 10px;
+    }
+    
+
+.contenedor2_MF{
+    background: black;
+    width: 1295px;
+    font-size: 20px; 
+    line-height:0;
+    padding: 20px 20px 20px 20px;
+}
+
+
+h1 
+{
+    display:inline-block;
+    text-align: center; 
+    width: 75%;
+    -webkit-text-fill-color:black;    
+    -webkit-text-stroke:2px;    
+    color: black;
+}
+
+body {    
+    border-color: black;
+
+  }
+
+  footer{
+    width: 1310px;
+    font-style: italic;
+}
+
+  /*******************************************************************/
+  
+.registro{
+    width: 400px;
+    background-color: lightblue;
+   padding: 30px;
+   margin: auto;
+   margin-top: 15px;
+   margin-bottom: 20px;
+   border-radius: 4px;
+   font-family: 'calibri';
+   
+}
+
+.pago{
+    
+}
+
+.mensaje{
+    background: pink;
+}
+
+.registro label{
+font-size: 16px;
+    font-weight:bolder;
+}
+
+.registro h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.registro p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+
+.registro a{
+    text-decoration: none;
+}
+
+.control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid;
+    font-family: 'calibri';
+    background: pink;
+}
+
+.boton{
+    width: 100%;
+    background: white;
+    padding: 12px;
+    border: none;
+    color: black;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+@media (min-height: 375px) 
+{
+    
+}
