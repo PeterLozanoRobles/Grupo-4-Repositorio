@@ -3,13 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/MVC62/controlador/FrontController.php</file>
-            <file>file:/C:/xampp/htdocs/MVC62/vista/categoria/categorias.nuevo.php</file>
-            <file>file:/C:/xampp/htdocs/MVC62/vista/categoria/categorias.editar.php</file>
-            <file>file:/C:/xampp/htdocs/MVC62/modelo/dao/CategoriasDAO.php</file>
-            <file>file:/C:/xampp/htdocs/MVC62/controlador/CategoriasController.php</file>
-            <file>file:/C:/xampp/htdocs/MVC62/modelo/dao/ProductoDAO.php</file>
-            <file>file:/C:/xampp/htdocs/MVC62/vista/categoria/categorias.list.php</file>
+            <file>file:/C:/xampp/htdocs/Grupo-4-Repositorio/ProyectoFinal/modelo/dao/ClienteDAO.php</file>
+            <file>file:/C:/xampp/htdocs/Grupo-4-Repositorio/ProyectoFinal/modelo/dao/EmpleadoDAO.php</file>
+            <file>file:/C:/xampp/htdocs/Grupo-4-Repositorio/ProyectoFinal/vista/empleado/empleados.loguin.php</file>
         </group>
     </open-files>
 </project-private>
