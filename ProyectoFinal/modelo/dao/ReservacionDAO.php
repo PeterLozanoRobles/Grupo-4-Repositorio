@@ -1,3 +1,5 @@
+//reservar    Comentario, Fecha, Hora (time),IDCliente (int),IdReserva (PRI, int),IdServicio (int)
+
 <?php
 require_once 'config/Conexion.php';
 require_once 'modelo/dto/Producto.php';
@@ -38,7 +40,7 @@ class ReservacionDAO {
     }
     
     
-      public function insertar($cod, $nom, $desc, $estado, $precio, $idCat, $usu) {
+      public function insertar($Comentario, $Fecha, $Hora, $IDCliente , $IdReserva, $IdServicio) {
         //sentencia sql
         $sql = "INSERT INTO productos (prod_id, prod_codigo, prod_nombre, prod_descripcion, prod_estado, prod_precio, 
             prod_idCategoria, prod_usuarioActualizacion, prod_fechaActualizacion) VALUES 
@@ -67,38 +69,8 @@ class ReservacionDAO {
         }
         return true;
     }
-     // metodo que usa DTO Producto
-     public function insertar2(Producto $prod) {
-        //sentencia sql
-        $sql = "INSERT INTO productos (prod_id, prod_codigo, prod_nombre, prod_descripcion, prod_estado, prod_precio, 
-            prod_idCategoria, prod_usuarioActualizacion, prod_fechaActualizacion) VALUES 
-            (NULL, :cod, :nom, :desc, :estado, :precio, :idCat, :usu, :fecha)";
-       
-        //bind parameters
-        $sentencia = $this->con->prepare($sql);
-        $fechaActual = new DateTime('NOW');
-        $prod->setFechaActualizacion($fechaActual->format('Y-m-d H:i:s'));
-        $data = [
-            'cod' =>  $prod->getCodigo(),
-            'nom' =>  $prod->getNombre(),
-            'desc' =>  $prod->getDescripcion(),
-            'estado' =>  $prod->getEstado(),
-            'precio' =>  $prod->getPrecio(),
-            'idCat' =>  $prod->getIdCategoria(),
-            'usu' =>  $prod->getUsuario(),
-            'fecha' =>  $prod->getFechaActualizacion()
-        ];
-        //execute
-        $sentencia->execute($data);
-        //retornar resultados, 
-        if ($sentencia->rowCount() <= 0) {// verificar si se inserto 
-            //rowCount permite obtner el numero de filas afectadas
-            return false;
-        }
-        return true;
-    }
     
-   public function actualizar($cod, $nom, $desc, $estado, $precio, $idCat, $usu, $id) {
+   public function actualizar($Comentario, $Fecha, $Hora, $IDCliente , $IdReserva, $IdServicio, $id) {
         //prepare
         $sql = "UPDATE `productos` SET `prod_codigo`=:cod,`prod_nombre`=:nom,`prod_descripcion`=:desc," .
                 "`prod_estado`=:estado,`prod_precio`=:precio,`prod_idCategoria`=:idCat,`prod_usuarioActualizacion`=:usu," .

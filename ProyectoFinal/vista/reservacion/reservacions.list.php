@@ -1,16 +1,17 @@
-
+//reservar    Comentario, Fecha, Hora (time),IDCliente (int),IdReserva (PRI, int),IdServicio (int)
 <?php require_once 'vista/templates/encabezado.php'; ?>
 
 <div class="container">
     <div class="row">
         <div class="col-sm-6">
-            <form action="index.php?c=productos&f=buscar" method="POST">
-                <input type="text" name="busqueda" id="busqueda"  placeholder="buscar..."/>
+            <form action="index.php?c=reservacions&f=buscar" method="POST">
+                <label> Fecha </label>
+                <input type="datetime-local" name="busqueda" id="busqueda">
                 <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i>Buscar</button>
             </form>       
         </div>
         <div class="col-sm-6 d-flex flex-column align-items-end">
-            <a href="index.php?c=productos&f=nuevo"> 
+            <a href="index.php?c=reservacions&f=nuevo"> 
                 <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Nuevo</button>
             </a>
         </div>
@@ -18,11 +19,12 @@
     <div class="table-responsive mt-2">
         <table class="table table-striped table-bordered">
             <thead class="thead-dark">
-            <th>Código</th>
-            <th>Nombre </th>
-            <th>Descripcion </th>
-            <th>Categoría </th>
-            <th>Precio </th>
+            <th>Código de reserva</th>
+            <th>Cedula del cliente</th>
+            <th>Servicio </th>
+            <th>Fecha </th>
+            <th>Hora </th>
+            <th>Comentario </th>
             <th>Acciones </th>
             </thead>
             <tbody class="tabladatos">
@@ -30,14 +32,15 @@
                 foreach ($resultados as $fila) {
                     ?>
                     <tr>
-                        <td><?php echo $fila['prod_codigo']; ?></td>
-                        <td><?php echo $fila['prod_nombre']; ?></td>
-                         <td><?php echo $fila['prod_descripcion']; ?></td>
-                        <td><?php echo $fila['cat_nombre']; ?></td>
-                        <td><?php echo $fila['prod_precio']; ?></td>
-                        <td><a class="btn btn-primary" href="index.php?c=productos&f=editar&id=<?php echo $fila['prod_id']; ?>"><i class="fas fa-marker"></i></a>
+                         <td><?php echo $fila['IdReserva']; ?></td>
+                          <td><?php echo $fila['prod_nombre']; ?></td>
+                            <td><?php echo $fila['prod_descripcion']; ?></td>
+                            <td><?php echo $fila['cat_nombre']; ?></td>
+                         <td><?php echo $fila['cat_nombre']; ?></td>
+                        <td><?php echo $fila['Comentario']; ?></td>
+                        <td><a class="btn btn-primary" href="index.php?c=reservacions&f=editar&id=<?php echo $fila['prod_id']; ?>"><i class="fas fa-marker"></i></a>
                             <a class="btn btn-danger" onclick="if (!confirm('Esta seguro de eliminar el producto?'))
-                                        return false;"  href="index.php?c=productos&f=eliminar&id=<?php echo $fila['prod_id']; ?>">
+                                        return false;"  href="index.php?c=reservacions&f=eliminar&id=<?php echo $fila['prod_id']; ?>">
                                 <i class="fas fa-trash-alt"></i></a>
                         </td>
                     </tr>

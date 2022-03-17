@@ -1,55 +1,50 @@
 <!-- incluimos  Encabezado -->
+//reservar    Comentario, Fecha, Hora (time),IDCliente (int),IdReserva (PRI, int),IdServicio (int)
+
 <?php require_once 'vista/templates/encabezado.php'; ?>
-?>
 
 <div class="container">
     <div class="card card-body">
         <form action="index.php?c=productos&f=editar" method="POST" name="formProdNuevo" id="formProdNuevo">
             <input type="hidden" name="id" id="id" value="<?php echo $prod['prod_id']; ?>"/>
             <div class="form-row">
-                <div class="form-group col-sm-6">
-                    <label for="codigo">C&oacute;digo</label>
-                    <input type="text"  name="codigo" id="codigo" value="<?php echo $prod['prod_codigo']; ?>" class="form-control" placeholder="codigo del producto" autofocus="" required/>
-                </div>
-                <div class="form-group col-sm-6">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" value="<?php echo $prod['prod_nombre']; ?>" class="form-control" placeholder="nombre producto" required>
-                </div>
-
-                <div class="form-group col-sm-6">
-                    <label for="categoria">Categoria</label>
-                    <select id="categoria" name="categoria" class="form-control">
-                       <?php
-                       foreach ($categorias as $cat) {
-                           $selected='';
-                           if($cat->cat_id == $prod['prod_idCategoria']){
-                                 $selected='selected="selected"';
-                           }
-                           echo  "<option ".$selected." value='".$cat->cat_id."'>".$cat->cat_nombre."</option>";
-                       }
-                        ?>
-                      
+               <div class="form-group col-sm-6">
+                    <label >Servicio</label>
+                    <select id="categoria" name="IdServicio" class="form-control" value="<?php echo $prod['prod_id']; ?>">
+                        <?php foreach ($categorias as $cat) {
+                            ?>
+                        <option value="<?php echo $cat->cat_id ?>">
+                            <?php echo $cat->cat_nombre; ?></option>
+                            <?php  } ?>   
                     </select>
                 </div>
                 <div class="form-group col-sm-6">
-                    <label for="precio">Precio</label>
-                    <input type="text" name="precio" id="precio" value="<?php echo $prod['prod_precio']; ?>" class="form-control" placeholder="precio producto" required>
+                    <label>Fecha</label>
+                    <input type="datetime" name="Fecha" class="form-control" value="<?php echo $prod['prod_id']; ?>">
                 </div>          
+                               
+                <div class="form-group col-sm-6">
+                    <label >Hora</label>
+                    <select id="categoria" name="Hora" class="form-control" value="<?php echo $prod['prod_id']; ?>">
+                        <option value="08:00:00"> 8H00</option>  
+                        <option value="10:00:00"> 10H00</option>  
+                        <option value="12:00:00"> 12H00</option>  
+                        <option value="14:00:00"> 14H00</option>  
+                        <option value="16:00:00"> 16H00</option>  
+                    </select>
+                </div>
 
                 <div class="form-group col-sm-12">
-                    <label for="descripcion">Descripcion</label>
-                    <textarea id="descripcion"  name="descripcion"  class="form-control" rows="2"><?php echo $prod['prod_descripcion']; ?>
-                    </textarea>
-                </div>
-                <div class="form-group col-sm-12">
-                    <input type="checkbox" id="estado" value="<?php echo $prod['prod_estado']?>" 
-                           name="estado" <?php echo ($prod['prod_estado'] == 1)?'checked="checked"':''; ?>>
-                    
-                    <label for="estado">Activo</label>
+                    <label for="descripcion">Comentario</label>
+                    <textarea id="descripcion"  name="Comentario" class="form-control" rows="3" value="<?php echo $prod['prod_id']; ?>"></textarea>
                 </div>
                 <div class="form-group mx-auto">
-                    <button type="submit" class="btn btn-primary" onclick="if (!confirm('Esta seguro de modificar el productos')) return false;" >Guardar</button>
-                    <a href="index.php?c=productos&a=index" class="btn btn-primary">Cancelar</a>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    <a href="index.php?c=reservacions&a=index" class="btn btn-primary">Cancelar</a>
+                </div>
+                <div class="form-group mx-auto">
+                    <button type="submit" class="btn btn-primary" onclick="if (!confirm('Esta seguro de modificar el la reservacion')) return false;" >Guardar</button>
+                    <a href="index.php?c=reservacions&a=index" class="btn btn-primary">Cancelar</a>
                 </div>
                     
             </div>  
