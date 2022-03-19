@@ -6,21 +6,20 @@
     <link rel="stylesheet" href="assets/css/style.css">
     </head>
          <style>
-            .contenedor_principal_pl .contenedor_secundario_pl{
-                background: lightblue;
-                width: 95%;
-            }
-                       
+                    
             footer h2{
                 color: pink;
             }
             
             footer{
+                border-style: dashed;
+                border-color: white;
+                background: pink;
                 text-align: left;
                 color: white;
                 width:100%;
                 max-width: 1850px;
-                max-height: 140px;
+                max-height: 220px;
             }
             
             .integrante{
@@ -70,14 +69,13 @@
 <body>
     <p></p>
     
-     <footer> 
+    <footer style="background: pink"> 
         <div class="contenedor2_MF">
             <u class="letrafoo"> Horario de atencion </u>
             <br>
             <h5>Lunes a Viernes 09:00 a 18:00</h5>
             <h5>SÃ¡bado 09:00 a 14:00</h5>
-            <u class="letrafoo"> Redes Sociales</u>
-            <p> </p>
+            <u class="letrafoo"> Redes Sociales</u><br>
             <a href="#"> <img  class="icono" src="Assets/images/facebook.png" alt="carrito_compra"> </a>
             <a href="#"> <img  class="icono" src="Assets/images/what.png" alt="carrito_compra"> </a>
             <a href="#"> <img  class="icono" src="Assets/images/Instagram.png" alt="carrito_compra"> </a>
@@ -90,7 +88,5 @@
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-
 </body>
 </html>
-
