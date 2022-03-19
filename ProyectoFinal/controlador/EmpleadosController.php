@@ -168,7 +168,9 @@ class EmpleadosController {
     public function loguin() {
         $Cedula = htmlentities($_GET['cedula']);
         $Contrasena = htmlentities($_GET['Pass']);
-        $exito = $this->modelo->logueoAdmi($id);
+        $exito = $this->modelo->logueoAdmi($Cedula,$Contrasena);
+        $rol= $this->modelo->rol($Cedula);
+        $_SESSION['Rol']=$rol;            //Cargo
         $msj = 'Bienvenido Administrador';
         $color = 'primary';
         if (!$exito) {

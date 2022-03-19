@@ -14,5 +14,7 @@
                     <a href="index.php?c=clientes&a=index" class="btn btn-primary">Cancelar</a>
                 </div>
         </form>
-    
+<form action="index.php?c=empleados&f=loguin" method="POST">
+                <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i>Administrador</button>
+</form> 
 <?php require_once 'vista/templates/piedepagina.php'; ?>
