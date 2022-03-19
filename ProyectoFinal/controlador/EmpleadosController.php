@@ -43,9 +43,10 @@ class EmpleadosController {
             $Usuario=htmlentities($_POST["Usuario"]);
             $Contrasena=htmlentities($_POST["Contrasena"]);
             $Pin=htmlentities($_POST["Pin"]);
+            $Telefono=htmlentities($_POST["telefono"]);
             
-            if (isset($_POST["Sexo"])) {
-                if (htmlspecialchars($_POST["Sexo"]) === "1") 
+            if (isset($_POST["sexo"])) {
+                if (htmlspecialchars($_POST["sexo"]) === "1") 
                 {
                 $Sexo="F";
                 } 
@@ -63,7 +64,7 @@ class EmpleadosController {
                  $Estado="N";
                 }
             }
-            $exito = $this->modelo->insertar($Cedula, $Nombre, $Apellidos, $Fecha_Nacimiento, $Sexo, $Cargo, $Sueldo, $Usuario, $Contrasena, $Pin, $Estado);
+            $exito = $this->modelo->insertar($Cedula, $Nombre, $Apellidos, $Fecha_Nacimiento,$Telefono, $Sexo, $Cargo, $Sueldo, $Usuario, $Contrasena, $Pin, $Estado);
             $msj = 'Empleado guardado exitosamente';
             $color = 'primary';
             if (!$exito) {
@@ -97,14 +98,15 @@ class EmpleadosController {
             $Usuario=htmlentities($_POST["Usuario"]);
             $Contrasena=htmlentities($_POST["Contrasena"]);
             $Pin=htmlentities($_POST["Pin"]);
+            $telefono=htmlentities($_POST["telefono"]);
             
-            if (isset($_POST["Sexo"])) {
-                if (htmlspecialchars($_POST["Sexo"]) === "1") 
+            if (isset($_POST["sexo"])) {
+                if (htmlspecialchars($_POST["sexo"]) === "1") 
                 {
-                $Sexo="F";
+                $sexo="F";
                 } 
                 else {
-                $Sexo="M";
+                $sexo="M";
                 }
             }
             

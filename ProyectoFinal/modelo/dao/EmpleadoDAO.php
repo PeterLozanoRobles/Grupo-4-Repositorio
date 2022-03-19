@@ -11,7 +11,7 @@ class EmpleadoDAO {
     //
     public function listar(){// listar todos los productos
         // sql
-        $sql = "select * from personal ;";
+        $sql = "select * from cliente ;";
         // preparar la sentencia
         $stmt = $this->con->prepare($sql);
         //ejecutar la sentencia
@@ -37,10 +37,10 @@ class EmpleadoDAO {
     }
     
     //
-    public function insertar( $Cedula, $Nombre, $Apellidos, $Fecha_Nacimiento, $Sexo, $Cargo, $Sueldo, $Usuario, $Contrasena, $Pin, $Estado) {
+    public function insertar( $Cedula, $Nombre, $Apellidos, $Telefono, $Fecha_Nacimiento, $Sexo, $Cargo, $Sueldo, $Usuario, $Contrasena, $Pin, $Estado) {
         //sentencia sql
-        $sql = "INSERT INTO personal ( Cedula, Nombre, Apellidos, Fecha_Nacimiento, Sexo, Cargo, Sueldo, Usuario, Contrasena, Pin, Estado) VALUES 
-            (:Cedula, :Nombre, :Apellidos, :Fecha_Nacimiento, :Sexo, :Cargo, :Sueldo, :Usuario, :Contrasena, :Pin, :Estado)";
+        $sql = "INSERT INTO personal ( Cedula, Nombre, Apellidos,Telefono, Fecha_Nacimiento, Sexo, Cargo, Sueldo, Usuario, Contrasena, Pin, Estado) VALUES 
+            (:Cedula, :Nombre, :Apellidos, :Telefono, :Fecha_Nacimiento, :Sexo, :Cargo, :Sueldo, :Usuario, :Contrasena, :Pin, :Estado)";
        
         //bind parameters
         $sentencia = $this->con->prepare($sql);
@@ -48,6 +48,7 @@ class EmpleadoDAO {
             'Cedula'=>  $Cedula,
             'Nombre'=>$Nombre,
             'Apellidos'=> $Apellidos,
+            'Telefono'=> $Telefono,
             'Fecha_Nacimiento'=> $Fecha_Nacimiento,
             'Sexo'=> $Sexo,
             'Cargo'=> $Cargo,
@@ -68,9 +69,9 @@ class EmpleadoDAO {
     }
     
     //
-    public function actualizar($Cedula, $Nombre, $Apellidos, $Fecha_Nacimiento, $Sexo, $Cargo, $Sueldo, $Usuario, $Contrasena, $Pin, $Estado, $id) {
+    public function actualizar($Cedula, $Nombre, $Apellidos,$Telefono, $Fecha_Nacimiento, $Sexo, $Cargo, $Sueldo, $Usuario, $Contrasena, $Pin, $Estado, $id) {
         //prepare
-        $sql = "UPDATE `personal` SET Cedula= :Cedula, Nombre= :Nombre, Apellidos= :Apellidos, Fecha_Nacimiento= :Fecha_Nacimiento, Sexo= :Sexo, Cargo= :Cargo, "
+        $sql = "UPDATE `personal` SET Cedula= :Cedula, Telefono=:Telefono, Nombre= :Nombre, Apellidos= :Apellidos, Fecha_Nacimiento= :Fecha_Nacimiento, Sexo= :Sexo, Cargo= :Cargo, "
                 . "Sueldo= :Sueldo, Usuario= :Usuario, Contrasena= :Contrasena, Pin= :Pin, Estado= :Estado WHERE IdPersonal=:id";
         
         $sentencia = $this->con->prepare($sql);
@@ -78,6 +79,7 @@ class EmpleadoDAO {
             'Cedula'=>  $Cedula,
             'Nombre'=>$Nombre,
             'Apellidos'=> $Apellidos,
+             'Telefono'=> $Telefono,
             'Fecha_Nacimiento'=> $Fecha_Nacimiento,
             'Sexo'=> $Sexo,
             'Cargo'=> $Cargo,
