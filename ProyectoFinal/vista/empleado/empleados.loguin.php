@@ -1,5 +1,6 @@
 <?php require_once 'vista/templates/encabezado.php'; ?>
 <div class="container"></div>
+<h1>Loguin de Administrador</h1>
         <form action="index.php?c=clientes&f=loguin" method="POST"> 
                 <label>Cedula</label>
                 <input type="text" name="cedula">

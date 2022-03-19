@@ -22,12 +22,11 @@
             <a class="navbar-brand" href="index.php">Floreria</a>
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="index.php?c=Home&f=index">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.php?c=index&a=index&p=about">Nosotros</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Catal&oacute;go</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.php?c=index&a=index&p=terminos">T&eacute;rminos y condiciones</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.php?c=index&a=index&p=contacto">Clientes</a></li>
-
-                <li class="nav-item"><a class="nav-link" href="index.php?c=Producto&f=index">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php?c=sucursal&a=index">Sucursales</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php?c=productos&a=index">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php?c=categorias&a=index">Catal&oacute;go</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php?c=clientes&a=index">Clientes</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php?c=productos&a=index">Empleado</a></li>
               
             </ul>  
             <ul class="navbar-nav ml-auto">
