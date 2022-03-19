@@ -48,7 +48,7 @@
                 </div>
                 <div class="form-group mx-auto">
                     <button type="submit" class="btn btn-primary" onclick="if (!confirm('Esta seguro de modificar el cliente')) return false;" >Guardar</button>
-                    <a href="index.php?c=productos&a=index" class="btn btn-primary">Cancelar</a>
+                    <a href="index.php?c=clientes&a=index" class="btn btn-primary">Cancelar</a>
                 </div>
                     
             </div>  

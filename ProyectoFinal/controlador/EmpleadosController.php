@@ -164,5 +164,21 @@ class EmpleadosController {
         $_SESSION['color'] = $color;
         header('Location:index.php?c=empleados&f=index'); 
     }
+    
+    public function loguin() {
+        $Cedula = htmlentities($_GET['cedula']);
+        $Contrasena = htmlentities($_GET['Pass']);
+        $exito = $this->modelo->logueoAdmi($id);
+        $msj = 'Bienvenido Administrador';
+        $color = 'primary';
+        if (!$exito) {
+            $msj = "Acceso denegado";
+            $color = "danger";
+        }
+        session_start();
+        $_SESSION['mensaje'] = $msj;
+        $_SESSION['color'] = $color;
+        header('Location:index.php?c=empleados&f=index'); 
+    
+        }
 }
-
