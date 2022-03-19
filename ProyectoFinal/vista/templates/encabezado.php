@@ -24,7 +24,6 @@
                 <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="index.php?c=home&f=index">Home</a></li>
                 <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="index.php?c=sucursal&a=index">Sucursales</a></li>
                 <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link"href="index.php?c=productos&a=index">Servicios</a></li>
-                <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="index.php?c=categorias&a=index">Catal&oacute;go</a></li>
                 <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="index.php?c=clientes&a=index">Clientes</a></li>
                 <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="index.php?c=empleados&a=index">Empleado</a></li>
               
