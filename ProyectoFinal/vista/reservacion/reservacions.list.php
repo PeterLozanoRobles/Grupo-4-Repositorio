@@ -33,13 +33,14 @@
                     ?>
                     <tr>
                          <td><?php echo $fila['IdReserva']; ?></td>
-                          <td><?php echo $fila['prod_nombre']; ?></td>
-                            <td><?php echo $fila['prod_descripcion']; ?></td>
-                            <td><?php echo $fila['cat_nombre']; ?></td>
-                         <td><?php echo $fila['cat_nombre']; ?></td>
+                         <td><?php echo $fila['Nombre del cliente']; ?></td>
+                         <td><?php echo $fila['Servicio']; ?></td>
+                         <td><?php echo $fila['Fecha']; ?></td>
+                         <td><?php echo $fila['Hora']; ?></td>n
                         <td><?php echo $fila['Comentario']; ?></td>
+                        <td><?php echo $fila['Accion']; ?></td>
                         <td><a class="btn btn-primary" href="index.php?c=reservacions&f=editar&id=<?php echo $fila['prod_id']; ?>"><i class="fas fa-marker"></i></a>
-                            <a class="btn btn-danger" onclick="if (!confirm('Esta seguro de eliminar el producto?'))
+                            <a class="btn btn-danger" onclick="if (!confirm('Esta seguro de eliminar la Reservacio?'))
                                         return false;"  href="index.php?c=reservacions&f=eliminar&id=<?php echo $fila['prod_id']; ?>">
                                 <i class="fas fa-trash-alt"></i></a>
                         </td>

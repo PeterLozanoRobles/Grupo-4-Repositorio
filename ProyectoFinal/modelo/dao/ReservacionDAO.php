@@ -2,7 +2,7 @@
 
 <?php
 require_once 'config/Conexion.php';
-require_once 'modelo/dto/Producto.php';
+require_once 'modelo/dto/ReservacionDAO.php';
 class ReservacionDAO {
     //put your code here
     private $con;
@@ -13,7 +13,9 @@ class ReservacionDAO {
     
     public function listar(){// listar todos los productos
         // sql
-        $sql = "select * from productos p, categoria c where c.Id_categoria=p.IdCategoria and c.Estado= 'A' ;";
+       $sql = "select r.IdReserva,c.Nombre as 'Nombre del cliente', p.Nombre as 'Servicio', r.Fecha, r.Hora, "
+                . "r.Comentario from reservar r , cliente c , productos p "
+                . "WHERE r.IdProductos=p.IdProductos and r.IDCliente= c.IdUsuario ;";
         // preparar la sentencia
         $stmt = $this->con->prepare($sql);
         //ejecutar la sentencia
@@ -26,12 +28,10 @@ class ReservacionDAO {
     }
     
     public function buscar($busq){
-          $sql = "SELECT * FROM productos, categoria  where prod_idCategoria = cat_id and prod_estado=1  and 
-		(prod_nombre like :b1 or cat_nombre =:b2)";
+          $sql = "SELECT * FROM reservar where IdReserva = :b1;";
         $stmt = $this->con->prepare($sql);
         // preparar la sentencia
-        $conlike = '%' . $busq . '%';
-        $data = ['b1' => $conlike, 'b2' => $conlike];
+        $data = ['b1' => $conlike];
         // ejecutar la sentencia
         $stmt->execute($data);
         //obtener y retornar resultados
@@ -39,26 +39,19 @@ class ReservacionDAO {
         return $resultados;      
     }
     
-    
-      public function insertar($Comentario, $Fecha, $Hora, $IDCliente , $IdReserva, $IdServicio) {
+   public function insertar($Comentario, $Fecha, $Hora, $IDCliente , $IdServicio) {
         //sentencia sql
-        $sql = "INSERT INTO productos (prod_id, prod_codigo, prod_nombre, prod_descripcion, prod_estado, prod_precio, 
-            prod_idCategoria, prod_usuarioActualizacion, prod_fechaActualizacion) VALUES 
-            (NULL, :cod, :nom, :desc, :estado, :precio, :idCat, :usu, :fecha)";
+        $sql = "INSERT INTO reservar (Comentario, Fecha, Hora, IDCliente, IdServicio) VALUES 
+            (Comentario, Fecha, Hora, IDCliente, IdServicio)";
        
         //bind parameters
         $sentencia = $this->con->prepare($sql);
-        $fechaActual = new DateTime('NOW');
-        $strfecha = $fechaActual->format('Y-m-d H:i:s');
         $data = [
-            'cod' => $cod,
-            'nom' => $nom,
-            'desc' => $desc,
-            'estado' => $estado,
-            'precio' => $precio,
-            'idCat' => $idCat,
-            'usu' => $usu,
-            'fecha' => $strfecha
+            'IDCliente' => $IDCliente,
+            'IdServicio' => $IdServicio,
+            'Fecha' => $Fecha,
+            'Hora' => $Hora,
+            'Comentario' => $Comentario
         ];
         //execute
         $sentencia->execute($data);
@@ -69,27 +62,19 @@ class ReservacionDAO {
         }
         return true;
     }
-    
-   public function actualizar($Comentario, $Fecha, $Hora, $IDCliente , $IdReserva, $IdServicio, $id) {
+    //
+   public function actualizar($Comentario, $Fecha, $Hora , $id) {
         //prepare
-        $sql = "UPDATE `productos` SET `prod_codigo`=:cod,`prod_nombre`=:nom,`prod_descripcion`=:desc," .
-                "`prod_estado`=:estado,`prod_precio`=:precio,`prod_idCategoria`=:idCat,`prod_usuarioActualizacion`=:usu," .
-                "`prod_fechaActualizacion`=:fecha WHERE prod_id=:id";
+        $sql = "UPDATE `reservar` SET Comentario=:Comentario, Fecha= :Fecha, Hora= :Hora WHERE IdReserva=:id";
         //now());
         //bind parameters
         $sentencia = $this->con->prepare($sql);
-        $fechaActual = new DateTime('NOW');
-        $strfecha = $fechaActual->format('Y-m-d H:i:s');
         $data = [
-            'cod' => $cod,
-            'nom' => $nom,
-            'desc' => $desc,
-            'estado' => $estado,
-            'precio' => $precio,
-            'idCat' => $idCat,
-            'usu' => $usu,
-            'fecha' => $strfecha,
-            'id' => $id,
+            'IdServicio' => $IdServicio,
+            'Fecha' => $Fecha,
+            'Hora' => $Hora,
+            'Comentario' => $Comentario,
+            'id' => $id
         ];
         //execute
         $sentencia->execute($data);
@@ -100,19 +85,14 @@ class ReservacionDAO {
         }
         return true;
     }
-
-    public function eliminar($id, $usu) {
+    //
+    public function eliminar($id) {
         //prepare
-        $sql = "UPDATE `productos` SET `prod_estado`=0,`prod_usuarioActualizacion`=:usu," .
-                "`prod_fechaActualizacion`=:fecha WHERE prod_id=:id";
+        $sql = "delete from reservar WHERE IdReserva =:id";
         //now());
         //bind parameters
         $sentencia = $this->con->prepare($sql);
-        $fechaActual = new DateTime('NOW');
-        $strfecha = $fechaActual->format('Y-m-d H:i:s');
         $data = [
-            'usu' => $usu,
-            'fecha' => $strfecha,
             'id' => $id
         ];
         //execute
@@ -126,7 +106,9 @@ class ReservacionDAO {
     }
     
       public function buscarxId($id) { // buscar un producto por su id
-        $sql = "select * from productos, categoria where prod_idCategoria = cat_id and prod_estado=1 and prod_id=:id";
+        $sql = "select r.IdReserva, c.Nombre as 'Nombre del cliente', p.Nombre as 'Servicio', r.Fecha, r.Hora, "
+                . "r.Comentario from reservar r , cliente c , productos p "
+                . "WHERE r.IdProductos=p.IdProductos and r.IDCliente= c.IdUsuario and r.IdReserva= :id";
         // preparar la sentencia
         $stmt = $this->con->prepare($sql);
         $data = ['id' => $id];
