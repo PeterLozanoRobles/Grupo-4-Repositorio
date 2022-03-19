@@ -6,7 +6,7 @@
         <div class="col-sm-6">  
             <form action="index.php?c=sucursal&f=buscar" method="POST">
                  <label for="nombre">Sector</label>
-                    <select name="busqueda" id="busqueda" class="form-control">
+                    <select name="busqueda" id="busqueda" style="padding-left: 150px; padding-right: 150px; border-radius: 5px;">
                         <option value="Norte">Norte</option>
                         <option value="Este">Este</option>
                          <option value="Oeste">Oeste</option>
