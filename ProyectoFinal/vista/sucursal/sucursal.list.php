@@ -12,20 +12,20 @@
                          <option value="Oeste">Oeste</option>
                          <option value="Sur">Sur</option>
                          <option value="Centro">Centro</option>
-                    </select>
+                    </select><br>
                 <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i>Buscar</button>
             </form>       
         </div>
-        <div>
+        
+        <div class="col-sm-6 d-flex flex-column align-items-end">
             <a href="index.php?c=sucursal&a=index"> 
                 <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Todo </button>
-            </a>
-        </div>
-        <div class="col-sm-6 d-flex flex-column align-items-end">
+            </a><br>
             <a href="index.php?c=sucursal&f=nuevo"> 
                 <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Nuevo</button>
             </a>
         </div>
+        
     </div>
     <div class="table-responsive mt-2">
         <table class="table table-striped table-bordered">

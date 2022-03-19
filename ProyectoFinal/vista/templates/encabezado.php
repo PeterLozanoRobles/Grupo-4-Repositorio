@@ -17,7 +17,7 @@
         <title>Floreria</title>
     </head> 
     <body style="background: lightblue;">
-        <nav class="barraNavegacion navbar navbar-expand-md navbar-dark fixed-top" style="background: pink; border-style: dashed; border-color: white;">
+        <nav class="barraNavegacion navbar navbar-expand-md navbar-dark fixed-top" style="background: #9D9A9D; border-style: dashed; border-color: white;">
             <a class="navbar-brand" href="index.php">Floreria De Guayaquil</a>
             <ul class="navbar-nav mr-auto">
              
@@ -35,10 +35,9 @@
 
             </ul>
         </nav><br>
+        
         <div>
-            <img src="assets/images/Logo.png">
-            <h1 style="margin-top: 60px; background: lightblue; color: white;">Floreria</h1>
-            <img src="assets/images/Logo.png" align="right">
+            <h1 style="margin-top:100px; margin-bottom: 70px; background: lightblue; color: white;"><img src="assets/images/Logo.png">Floreria<img src="assets/images/Logo.png"></h1>
         </div>
         
     </body>    
