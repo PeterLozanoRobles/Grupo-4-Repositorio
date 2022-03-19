@@ -18,7 +18,7 @@
                 
                 <div class="form-group col-sm-6">
                     <label for="nombre">Sector</label>
-                    <select name="Sector" class="form-control" value="<?php echo $prod['Sector']; ?>">
+                    <select name="Sector" value="<?php echo $prod['Sector']; ?>" style="padding-left: 150px; padding-right: 150px; border-radius: 5px;">
                         <option value="Norte">Norte</option>
                         <option value="Este">Este</option>
                          <option value="Oeste">Oeste</option>

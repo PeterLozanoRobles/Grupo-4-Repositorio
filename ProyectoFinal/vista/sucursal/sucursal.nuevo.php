@@ -16,7 +16,7 @@
                 
                 <div class="form-group col-sm-6">
                     <label for="nombre">Sector</label>
-                    <select name="Sector" class="form-control">
+                    <select name="Sector" style="padding-top: 5px; padding-bottom: 5px; padding-left: 225px; padding-right: 225px; border-radius: 5px;">
                         <option value="Norte">Norte</option>
                         <option value="Este">Este</option>
                          <option value="Oeste">Oeste</option>
