@@ -111,11 +111,26 @@ class ClienteDAO {
     }
     
        //
-      public function buscarxId($id) { // buscar un producto por su id
+    public function buscarxId($id) { // buscar un producto por su id
         $sql = "select * from cliente where IdUsuario=:id";
         // preparar la sentencia
         $stmt = $this->con->prepare($sql);
         $data = ['id' => $id];
+        // ejecutar la sentencia
+        $stmt->execute($data);
+        // recuperar los datos (en caso de select)
+        $cliente = $stmt->fetch(PDO::FETCH_ASSOC);// fetch retorna el primer registro
+        // retornar resultados
+        return $cliente;
+    }
+    
+     public function loguin($Nombre, $pass) { // buscar un producto por su id
+        $sql = "select * from cliente where Nombre=:Nombre and Password= :Password";
+        // preparar la sentencia
+        $stmt = $this->con->prepare($sql);
+        $data = [
+            'Nombre' => $Nombre,
+            'Password' => $id];
         // ejecutar la sentencia
         $stmt->execute($data);
         // recuperar los datos (en caso de select)

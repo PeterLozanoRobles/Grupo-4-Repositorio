@@ -4,8 +4,8 @@
     
 <h1>Loguin de Cliente</h1>
         <form action="index.php?c=clientes&f=loguin" method="POST"> 
-                <label>Cedula</label>
-                <input type="text" name="cedula">
+                <label>Nombre</label>
+                <input type="text" name="Nombre">
                 <label>contrasena</label>
                 <input type="password" name="Pass">
                 

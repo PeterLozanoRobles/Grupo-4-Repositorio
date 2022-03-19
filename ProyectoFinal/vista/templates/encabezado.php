@@ -30,7 +30,7 @@
             </ul>  
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item my-auto" style=" background: lightblue; border-style: dashed; border-color: white; margin-right: 10px; padding: 10px;"><span style="color:white">Usuario </span></li>
-                <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="#">Login</a></li>
+                <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="index.php?c=clientes&f=loguin">Login</a></li>
 
             </ul>
         </nav><br>

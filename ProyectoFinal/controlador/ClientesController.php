@@ -153,4 +153,29 @@ class ClientesController {
         $_SESSION['color'] = $color;
         header('Location:index.php?c=clientes&f=index'); 
     }
+    
+     public function loguin() {
+        if ($_SERVER["REQUEST_METHOD"] == "POST") 
+        {// editar
+            $Nombre= htmlentities($_POST["Nombre"]);
+            $pass=htmlentities($_POST["Pass"]);
+            $exito = $this->modelo->loguin($Nombre, $pass);
+            $_SESSION['Rol'] = 'Cliente';
+            $msj = 'Bienvenido';
+            $color = 'primary';
+            if (!$exito) {
+                $msj = "Usuario o contrasena incorrecto";
+                $color = "danger";
+            }
+            if (!isset($_SESSION)) {
+                session_start();
+            };
+            $_SESSION['mensaje'] = $msj;
+            $_SESSION['color'] = $color;
+            //llamar a la vista
+            //   $this->index();
+            header('Location:index.php?c=clientes&f=index');
+        }
+            
+    }
 }

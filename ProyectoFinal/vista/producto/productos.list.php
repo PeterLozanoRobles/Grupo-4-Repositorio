@@ -16,7 +16,7 @@
         </div>
         <div class="col-sm-6 d-flex flex-column align-items-end">
             <a href="index.php?c=categorias&a=index"> 
-                <button type="button" class="btn btn-primary"> Catalogo</button>
+                <button type="button" class="btn btn-primary"> Categoria</button>
             </a>
         </div>
         </div>

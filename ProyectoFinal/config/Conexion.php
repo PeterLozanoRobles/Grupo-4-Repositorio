@@ -3,7 +3,7 @@ class Conexion{
     
     public static function getConexion(){
         $database_username = 'root';
-        $database_password = '';
+        $database_password = 'Falcone.1998';
         $dbname="floreria";
         $dsn = 'mysql:host=localhost;dbname=' . $dbname;
         $conexion = null; 
