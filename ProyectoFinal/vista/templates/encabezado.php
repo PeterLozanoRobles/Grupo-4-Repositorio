@@ -1,4 +1,3 @@
-
 <!-- parte inicial del documento-->
 <!DOCTYPE html>
 <html>
@@ -17,26 +16,31 @@
 
         <title>Floreria</title>
     </head> 
-    <body>
-        <nav class="barraNavegacion navbar navbar-expand-md navbar-dark fixed-top">
-            <a class="navbar-brand" href="index.php">Floreria</a>
+    <body style="background: lightblue;">
+        <nav class="barraNavegacion navbar navbar-expand-md navbar-dark fixed-top" style="background: pink; border-style: dashed; border-color: white;">
+            <a class="navbar-brand" href="index.php">Floreria De Guayaquil</a>
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="index.php?c=Home&f=index">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.php?c=sucursal&a=index">Sucursales</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.php?c=productos&a=index">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.php?c=categorias&a=index">Catal&oacute;go</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.php?c=clientes&a=index">Clientes</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.php?c=productos&a=index">Empleado</a></li>
+                <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="index.php?c=Home&f=index">Home</a></li>
+                <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="index.php?c=index&a=index&p=about">Nosotros</a></li>
+                <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="#">Catal&oacute;go</a></li>
+                <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="index.php?c=index&a=index&p=terminos">T&eacute;rminos y condiciones</a></li>
+                <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="index.php?c=index&a=index&p=contacto">Clientes</a></li>
+                <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="index.php?c=Producto&f=index">Productos</a></li>
               
             </ul>  
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item my-auto"><span style="color:white">Usuario </span></li>
-                <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                <li class="nav-item my-auto" style=" background: lightblue; border-style: dashed; border-color: white; margin-right: 10px; padding: 10px;"><span style="color:white">Usuario </span></li>
+                <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="#">Login</a></li>
 
             </ul>
-        </nav>
-
-        <h1 class="jumbotron text-center titNivel1"><i class="fab fa-shopify"></i>Floreria </h1>
+        </nav><br>
+        <div>
+            <img src="assets/images/Logo.png">
+            <h1 style="margin-top: 60px; background: lightblue; color: white;">Floreria</h1>
+            <img src="assets/images/Logo.png" align="right">
+        </div>
+        
+    </body>    
 
         <?php
         if (isset($_SESSION['mensaje']) and $_SESSION['mensaje'] != '') {
