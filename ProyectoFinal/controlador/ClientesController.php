@@ -171,7 +171,6 @@ class ClientesController {
            }
             $_SESSION['mensaje'] = $msj;
             $_SESSION['color'] = $color;
-            echo 'Bienvenido '+$Nombre;
             //header('Location:index.php?c=clientes&f=index');
         }
         else 

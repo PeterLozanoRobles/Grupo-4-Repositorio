@@ -14,7 +14,7 @@
                 </div>
         </form>
 <form action="index.php?c=empleados&f=loguin" method="POST">
-                <button type="submit" class="btn btn-primary">Administrador</button>
+    <button type="submit" class="btn btn-primary">Administrador</button>
 </form> 
 </div>
 <?php require_once 'vista/templates/piedepagina.php'; ?>

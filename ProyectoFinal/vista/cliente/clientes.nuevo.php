@@ -49,7 +49,7 @@
                 </div>
             </div>  
         </form>
-
+ // no me salio la validacion <php require_once 'assets/js/app.js'; ?>
 
     </div>
 </div>
