@@ -160,22 +160,22 @@ class ClientesController {
             $Nombre= htmlentities($_POST["Nombre"]);
             $pass=htmlentities($_POST["Pass"]);
             $exito = $this->modelo->loguin($Nombre, $pass);
-            $_SESSION['Rol'] = 'Cliente';
-            $msj = 'Bienvenido';
-            $color = 'primary';
-            if (!$exito) {
+            if ($exito===false) {
                 $msj = "Usuario o contrasena incorrecto";
                 $color = "danger";
             }
-            if (!isset($_SESSION)) {
-                session_start();
-            };
+           else{
+               $_SESSION['Rol'] = 'Cliente';
+            $msj = 'Bienvenido';
+            $color = 'primary';
+           }
             $_SESSION['mensaje'] = $msj;
             $_SESSION['color'] = $color;
-            //llamar a la vista
-            //   $this->index();
-            header('Location:index.php?c=clientes&f=index');
+            echo 'Bienvenido '+$Nombre;
+            //header('Location:index.php?c=clientes&f=index');
         }
+        else 
+            require_once 'vista/cliente/clientes.loguin.php';
             
     }
 }

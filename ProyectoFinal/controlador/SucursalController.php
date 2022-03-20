@@ -128,4 +128,6 @@ class SucursalController {
         $_SESSION['color'] = $color;
         header('Location:index.php?c=sucursal&f=index'); 
     }
+    
+    
 }

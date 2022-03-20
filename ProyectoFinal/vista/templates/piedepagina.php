@@ -69,7 +69,7 @@
 <body>
     <p></p>
     
-    <footer style="background: #9D9A9D"> 
+    <footer style="background: #000"> 
         <div class="contenedor2_MF">
             <u class="letrafoo"> Horario de atencion </u>
             <br>

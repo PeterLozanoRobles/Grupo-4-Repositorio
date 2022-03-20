@@ -3,7 +3,7 @@
 <h1>Loguin de Administrador</h1>
         <form action="index.php?c=empleados&f=loguin" method="POST"> 
                 <label>Cedula</label>
-                <input type="text" name="cedula">
+                <input type="text" name="Cedula">
                 <label>contrasena</label>
                 <input type="password" name="Pass">
                 <div class="form-group mx-auto">

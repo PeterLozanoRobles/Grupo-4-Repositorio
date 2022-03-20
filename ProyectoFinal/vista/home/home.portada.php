@@ -15,7 +15,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
              justify-content: center;">
                 
 		<div class="elemento col-md-3" style="background:pink; padding:10px; margin: 5px; border: 1px solid lightblue">
-		    <img src="assets_MF/image/logo.png" alt="imagen_LM">
+		    <img src="assets/images/logo.png" alt="imagen_LM">
 		</div >
 				
 		<div class="elemento col-md-5" style="padding:10px; margin: 5px; border: 1px solid pink">
@@ -24,7 +24,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
                 todos nuestros clientes a través de nuestros arreglos florales para toda ocasión.</p>
 		</div>	
 		<div class="elemento col-md-3" style="background: pink; padding:10px; margin: 5px; border: 1px solid lightblue">
-		<img src="assets_MF/image/logo.png" alt="imagen_LM" width="200" height="100">
+		<img src="assets/images/logo.png" alt="imagen_LM" width="200" height="100">
 		</div >
                 
 	    </div>
@@ -32,7 +32,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
             <div class="row" style="display: flex; align-items: center;
              justify-content: center;">		
 	    <div class="elemento col-md-11" style="border: 1px solid pink; margin: 5px;">	
-                <img class="Portada" src="assets_MF/image/Portada.png" alt="imagen_LM">
+                <img class="Portada" src="assets/images/Portada.png" alt="imagen_LM"width="800" height="400">
 	    </div>	
                 	
                 
@@ -42,7 +42,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
              justify-content: center;">
                 
 		<div class="elemento col-md-3" style="background:pink; padding:10px; margin: 5px; border: 1px solid lightblue">
-		    <img src="assets_MF/image/logo.png" alt="imagen_LM" width="200" height="100">
+		    <img src="assets/images/logo.png" alt="imagen_LM" width="200" height="100">
 		</div >
 				
 		<div class="elemento col-md-5" style="padding:10px; margin: 5px; border: 1px solid pink">
@@ -51,7 +51,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
                    Puedes usar la forma de pago que mejor se adapte a tus necesidades.</p>
 		</div>	
 		<div class="elemento col-md-3" style="background:pink; padding:10px; margin: 5px; border: 1px solid lightblue">
-		<img src="assets_MF/image/logo.png" alt="imagen_LM" width="200" height="100">
+		<img src="assets/images/logo.png" alt="imagen_LM" width="200" height="100">
 		</div >
                 
 	    </div>

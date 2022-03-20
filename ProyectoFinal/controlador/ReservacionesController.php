@@ -1,6 +1,5 @@
 <?php
-require_once 'modelo/dao/ProductoDAO.php';
-require_once 'modelo/dao/CategoriasDAO.php';
+require_once 'modelo/dao/ReservacionDAO.php';
 class ReservacionesController {
     private $modelo;
     private $vista;
@@ -13,7 +12,7 @@ class ReservacionesController {
         // llamar al modelo, obtener los datos de productos
         $resultados = $this->modelo->listar();
         // llama a la vista para que muestre los datos
-        require_once 'vista/producto/productos.list.php';
+        require_once 'vista/reservacion/reservacions.list.php';
     }
 
     public function buscar() {
@@ -23,7 +22,7 @@ class ReservacionesController {
         $resultados = $this->modelo->buscar($busq);
 
         // comunicarse con la vista
-        require_once 'vista/producto/productos.list.php';
+        require_once 'vista/reservacion/reservacions.list.php';
     }
     
     // metodo que usa DTO Producto
@@ -49,7 +48,7 @@ class ReservacionesController {
             $_SESSION['color'] = $color;
             //llamar a la vista
             //   $this->index();
-            header('Location:index.php?c=Productos&f=index');
+            header('Location:index.php?c=reservaciones&f=index');
         } 
         else {
             require_once 'modelo/dao/CategoriasDAO.php';
@@ -68,7 +67,7 @@ class ReservacionesController {
             DateTime::$Fecha=htmlentities($_POST["Fecha"]);
             $Comentario = htmlentities($_POST['Comentario']);
             $exito = $this->modelo->actualizar($Comentario, $Fecha, $Hora, $id);
-            $msj = 'Producto actualizado exitosamente';
+            $msj = 'Reservacion actualizado exitosamente';
             $color = 'primary';
             if (!$exito) {
                 $msj = "No se pudo realizar la actualizacion";
@@ -81,7 +80,7 @@ class ReservacionesController {
             $_SESSION['color'] = $color;
             //llamar a la vista
             //   $this->index();
-            header('Location:index.php?c=Productos&f=index');        
+            header('Location:index.php?c=reservaciones&f=index');        
             
         } 
         else {//mostrar el formulario de edicion cuando la solicitud es por get
@@ -96,7 +95,7 @@ class ReservacionesController {
             $prod = $this->modelo->buscarxId($id);
 
             // comunicarse con la vista
-            require_once 'vista/producto/productos.editar.php';
+            require_once 'vista/reservacion/reservacions.editar.php';
         }
     }
 
@@ -119,6 +118,6 @@ class ReservacionesController {
         //llamar a la vista
         // $this->index();
         //llamar a la vista
-        header('Location:index.php?c=productos&f=index'); // redireccionamiento, causa un cambio en la url
+        header('Location:index.php?c=reservaciones&f=index'); // redireccionamiento, causa un cambio en la url
     }
 }

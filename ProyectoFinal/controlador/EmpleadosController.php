@@ -98,15 +98,14 @@ class EmpleadosController {
             $Usuario=htmlentities($_POST["Usuario"]);
             $Contrasena=htmlentities($_POST["Contrasena"]);
             $Pin=htmlentities($_POST["Pin"]);
-            $telefono=htmlentities($_POST["telefono"]);
             
-            if (isset($_POST["sexo"])) {
-                if (htmlspecialchars($_POST["sexo"]) === "1") 
+            if (isset($_POST["Sexo"])) {
+                if (htmlspecialchars($_POST["Sexo"]) === "1") 
                 {
-                $sexo="F";
+                $Sexo="F";
                 } 
                 else {
-                $sexo="M";
+                $Sexo="M";
                 }
             }
             
@@ -166,21 +165,26 @@ class EmpleadosController {
     }
     
     public function loguin() {
-        $Cedula = htmlentities($_GET['cedula']);
-        $Contrasena = htmlentities($_GET['Pass']);
+         if ($_SERVER["REQUEST_METHOD"] == "POST") 
+        {// 
+        $Cedula=htmlentities($_POST["Cedula"]);
+        $Contrasena=htmlentities($_POST["Pass"]);
         $exito = $this->modelo->logueoAdmi($Cedula,$Contrasena);
-        $rol= $this->modelo->rol($Cedula);
-        $_SESSION['Rol']=$rol;            //Cargo
+        if($exito===true){
+        $_SESSION['Rol']=$this->modelo->Rol($Cedula);         //Cargo
         $msj = 'Bienvenido Administrador';
         $color = 'primary';
-        if (!$exito) {
-            $msj = "Acceso denegado";
+        }
+        else {
+            $msj = "Cedula o contrasena esta incorrecto";
             $color = "danger";
         }
         session_start();
         $_SESSION['mensaje'] = $msj;
         $_SESSION['color'] = $color;
         header('Location:index.php?c=empleados&f=index'); 
-    
         }
+        else 
+            require_once 'vista/empleado/empleados.loguin.php';
+}
 }

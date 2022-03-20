@@ -64,7 +64,7 @@
                 <div class="form-group col-sm-12">
                     <label> Estado </label>
                     <input type="checkbox" value="1" name="Estado" value="<?php echo $prod['Estado']; ?>"
-                           value="<?php echo $prod['Estado']; ?>">
+                           <?php echo ($prod['Estado'] == 'A')?'checked="checked"':''; ?>>
                     <label for="termino">Activo</label>
                 </div>
                      <div class="form-group mx-auto">

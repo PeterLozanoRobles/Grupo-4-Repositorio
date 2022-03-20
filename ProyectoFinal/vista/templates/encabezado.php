@@ -17,16 +17,17 @@
         <title>Floreria</title>
     </head> 
     <body style="background: lightblue;">
-        <nav class="barraNavegacion navbar navbar-expand-md navbar-dark fixed-top" style="background: #9D9A9D; border-style: dashed; border-color: white;">
+        <nav class="barraNavegacion navbar navbar-expand-md navbar-dark fixed-top" style="background: #e4b9c0; border-style: dashed; border-color: white;">
             <a class="navbar-brand" href="index.php">Floreria De Guayaquil</a>
             <ul class="navbar-nav mr-auto">
              
-                <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="index.php?c=home&f=index">Home</a></li>
+                <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="index.php?c=paginas&a=index">Home</a></li>
                 <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="index.php?c=sucursal&a=index">Sucursales</a></li>
                 <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link"href="index.php?c=productos&a=index">Servicios</a></li>
                 <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="index.php?c=clientes&a=index">Clientes</a></li>
-                <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="index.php?c=empleados&a=index">Empleado</a></li>
-              
+                <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="index.php?c=empleados&a=nosotros">Empleado</a></li>
+                <li class="nav-item" style="background: lightblue; border-style: dashed; border-color: white; margin-right: 10px;"><a class="nav-link" href="index.php?c=paginas&f=nosotros">Nosotros</a></li>
+
             </ul>  
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item my-auto" style=" background: lightblue; border-style: dashed; border-color: white; margin-right: 10px; padding: 10px;"><span style="color:white">Usuario </span></li>

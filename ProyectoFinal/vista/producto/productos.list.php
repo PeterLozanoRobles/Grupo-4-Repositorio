@@ -52,6 +52,5 @@
             </tbody>
         </table>
     </div>
-
-</div>
+<from
 <?php require_once 'vista/templates/piedepagina.php'; ?>

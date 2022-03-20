@@ -43,7 +43,7 @@
                 
                 <div class="form-group col-sm-12">
                     <input type="checkbox" value="1" name="termino" value="<?php echo $prod['Termino']?>" 
-                        <?php echo ($prod['prod_estado'] == 'S')?'checked="checked"':''; ?> >
+                        <?php echo ($prod['Termino'] == 'S')?'checked="checked"':''; ?> >
                     <label for="termino">Acepto termino y condiciones</label>
                 </div>
                 <div class="form-group mx-auto">

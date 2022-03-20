@@ -125,17 +125,19 @@ class ClienteDAO {
     }
     
      public function loguin($Nombre, $pass) { // buscar un producto por su id
-        $sql = "select * from cliente where Nombre=:Nombre and Password= :Password";
+        $sql = "select count(Nombre) from cliente where Nombre=:Nombre and Password= :Password";
         // preparar la sentencia
         $stmt = $this->con->prepare($sql);
         $data = [
             'Nombre' => $Nombre,
-            'Password' => $id];
+            'Password' => $pass];
         // ejecutar la sentencia
         $stmt->execute($data);
         // recuperar los datos (en caso de select)
-        $cliente = $stmt->fetch(PDO::FETCH_ASSOC);// fetch retorna el primer registro
-        // retornar resultados
-        return $cliente;
+        if ($stmt=== 0) {// verificar si se inserto 
+            //rowCount permite obtner el numero de filas afectadas
+            return false;
+        }
+        return true;
     }
 }
